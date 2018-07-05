@@ -7,9 +7,9 @@ Not just stuff for end users.  Also includes stuff for internal, organisational 
 
 ## Related protoypes
 
-This protoype, and alpha, is based on the work in the previous, wider scoped alpha.
+This prototype, and alpha, is based on the work in the previous, wider scoped alpha.
 
-This, new, proto, will take a more focused view, and will bring across work from wider looking - (develop land and proprty alpha protoype)[https://github.com/LandRegistry/develop-property-alpha]
+This, new, proto, will take a more focused view, and will bring across work from wider looking - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
 
 
 ## Users
@@ -18,13 +18,15 @@ This, new, proto, will take a more focused view, and will bring across work from
 
 developer = developer and developers conveyancer
 
-I'm a developer and I want to check my plans to develop land into homes for sale.
+I'm a developer and I want to check my plans to develop properties will be registrable.
 
 I'm a developer and I've updated my plans for the development/properties I'm building.
 
 I'm a developer and I want to be notified if something is a problem.
 
 I'm a developer and I'm ready to sell properties
+
+I'm a developer and I need to share the plans with other parties
 
 
 ### Buying a property
@@ -42,7 +44,7 @@ I'm considering properties in my local area and i want to see what i might want 
 
 ### HM Land Registry
 
-I/We need to check the estate and plot plans to see if it could be registered, or what the problmems might be
+I/We need to check the estate and plot plans to see if it could be registered, or what the problems might be
 
 I/We need to start drafting property records in anticipation of sale, so that parties can convey more quickly and we can be efficient
 
@@ -60,21 +62,21 @@ I/We need to know what is being built around the country so we can more effectiv
 
 
 
-## Viewing the protoypes.
+## Viewing the prototypes.
 
 Contact a member of the team - e.g. look at the github history (people external to HMLR), or [Sharepoint](https://landregistryuk.sharepoint.com/sites/NewBuildsDiscovery) (HMLR colleagues) to get the username and password to [view the prototypes](https://develop-property-alpha.herokuapp.com)
 
 
 
-## Adding to this protoype
+## Adding to this prototype
 
 Speak to Develop land and property team (find us on Sharepoint [internal organisation site])
 
-Made from v7.0.0-beta.10 of the gov.uk protoype kit
+Made from v7.0.0-beta.10 of the gov.uk prototype kit
 
 
 
-## About the GOV.UK protoype kit
+## About the GOV.UK prototype kit
 
 ### GOV.UK Prototype Kit · [![Greenkeeper badge](https://badges.greenkeeper.io/alphagov/govuk-prototype-kit.svg)](https://greenkeeper.io/)
 
