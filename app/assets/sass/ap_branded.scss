@@ -1,0 +1,59 @@
+@import "node_modules/govuk-frontend/settings/all";
+
+// Override the govuk-frontend font stack
+$govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
+
+@import "node_modules/govuk-frontend/all";
+
+
+
+
+/////////////////////////////////////////////////
+// ap_branded styles - modifier classes to govuk
+/////////////////////////////////////////////////
+
+
+//////////
+// header
+//////////
+
+.ap-header {
+  background-color: #005EA5;
+  border-bottom: 1px solid #3f3f3f;
+}
+
+.ap-header__container {
+  margin-bottom:5px;
+}
+
+
+//////////
+// footer
+//////////
+
+.ap-footer { 
+  background-color: #e6f3ff;
+  border-color: #005EA5;
+  color: #000000;
+}
+
+.ap-footer a:link, .ap-footer a:visited, .ap-footer a:hover, .ap-footer a:active { 
+  color: #000000;
+}
+
+
+//////////
+// body - override gov.uk styles
+//////////
+
+.govuk-template__body {
+  background-color:#f8faff;
+}
+
+
+// need to reintroduce p to pick up sizing - dunno why
+p {
+  @extend %govuk-body-m;
+}
+
+

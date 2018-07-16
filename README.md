@@ -5,11 +5,11 @@ This is prototyping the beta proposition.
 Not just stuff for end users.  Also includes stuff for internal, organisational use.
 
 
-## Related protoypes
+## Related prototypes
 
 This prototype, and alpha, is based on the work in the previous, wider scoped alpha.
 
-This, new, proto, will take a more focused view, and will bring across work from wider looking - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
+This new prototype will take a more focused view, and will contain work from the 'wider looking' alpha prototype - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
 
 
 ## Users
@@ -72,7 +72,7 @@ Contact a member of the team - e.g. look at the github history (people external 
 
 Speak to Develop land and property team (find us on Sharepoint [internal organisation site])
 
-Made from v7.0.0-beta.10 of the gov.uk prototype kit
+Made from v7.0.0-beta.10 of the GOV.UK prototype kit
 
 
 

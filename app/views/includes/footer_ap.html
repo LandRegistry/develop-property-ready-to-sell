@@ -1,0 +1,57 @@
+<footer class="govuk-footer ap-footer" role="contentinfo">
+  <div class="govuk-width-container">
+
+    <!-- storytelling navigation - yet to be called/tested  - to allow a flow of screen and different proto page to tell a story about the service -->
+    {% if params.storynavigation %}
+      <div class="govuk-footer__navigation">
+        {% for item in params.storynavigation %}
+          <div class="govuk-footer__section">
+            <h2 class="govuk-footer__heading govuk-heading-m">{{ item.title }}</h2>
+            {% if item.items %}
+              {% set listClasses %}
+                {% if item.columns %}
+                  govuk-footer__list--columns-{{ item.columns }}
+                {% endif %}
+              {% endset %}
+              <ul class="govuk-footer__list {{ listClasses | trim }}">
+                {% for item in item.items %}
+                  {% if item.href and item.text %}
+                    <li class="govuk-footer__list-item">
+                      <a class="govuk-footer__link" href="{{ item.href }}">
+                        {{ item.text }}
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      <hr class="govuk-footer__section-break">
+    {% endif %}
+
+    <div class="govuk-footer__meta">
+      <div class="govuk-footer__meta-item govuk-footer__meta-item--grow">
+
+        <h2 class="govuk-visually-hidden">Support links</h2>
+        <ul class="govuk-footer__inline-list">
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="/">
+              Prototype homepage
+            </a>
+          </li>
+          <li class="govuk-footer__inline-list-item">
+            <a class="govuk-footer__link" href="/prototype-admin/admin">
+              Prototype admin
+            </a>
+          </li>
+        </ul>
+
+        <span class="govuk-footer__licence-description">Built by the Develop Land and Property service team, <a class="govuk-footer__link" href="/">talk to us</a>
+        </span>
+      </div>
+
+    </div>
+  </div>
+</footer>
