@@ -1,0 +1,264 @@
+// sass for styles unique to this application / prototypes.
+// feel free to split this into more than one file
+// try to layout on a logical order
+// use BEM naming https://css-tricks.com/bem-101/
+
+// AP TODO
+// rewrite these styles (LR and mine - BEM them) - because new kit, new styles
+
+// Measurements used across GOV.UK - from _measurements
+$gutter: 30px;
+$gutter-one-quarter: $gutter / 4;
+$gutter-one-third: $gutter / 3;
+$gutter-half: $gutter / 2;
+$gutter-two-thirds: $gutter - $gutter-one-third;
+
+
+// Top spacing
+.spacing-top-flush {
+  margin-top: 0 !important;
+}
+
+.spacing-top-double {
+  margin-top: 2 * $gutter !important;
+}
+
+.spacing-top-single {
+  margin-top: $gutter !important;
+}
+
+.spacing-top-half,
+.spacing-top-one-half {
+  margin-top: $gutter-half !important;
+}
+
+.spacing-top-third,
+.spacing-top-one-third {
+  margin-top: $gutter-one-third !important;
+}
+
+
+// Bottom spacing
+.spacing-bottom-flush {
+  margin-bottom: 0 !important;
+}
+
+.spacing-bottom-double {
+  margin-bottom: 2 * $gutter !important;
+}
+
+.spacing-bottom-single {
+  margin-bottom: $gutter !important;
+}
+
+.spacing-bottom-half,
+.spacing-bottom-one-half {
+  margin-bottom: $gutter-half !important;
+}
+
+.spacing-bottom-third,
+.spacing-bottom-one-third {
+  margin-bottom: $gutter-one-third !important;
+}
+
+
+
+// Left spacing
+.spacing-left-flush {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.spacing-left-double {
+  margin-left: 2 * $gutter !important;
+}
+
+.spacing-left-single {
+  margin-left: $gutter !important;
+}
+
+.spacing-left-half,
+.spacing-left-one-half {
+  margin-left: $gutter-half !important;
+}
+
+.spacing-left-third,
+.spacing-left-one-third {
+  margin-left: $gutter-one-third !important;
+}
+
+// Right spacing
+.spacing-right-flush {
+  margin-right: 0 !important;
+}
+
+.spacing-right-double {
+  margin-right: 2 * $gutter !important;
+}
+
+.spacing-right-single {
+  margin-right: $gutter !important;
+}
+
+.spacing-right-half,
+.spacing-right-one-half {
+  margin-right: $gutter-half !important;
+}
+
+.spacing-right-third,
+.spacing-right-one-third {
+  margin-right: $gutter-one-third !important;
+}
+
+// address
+.address__line {
+  display: block;
+}
+
+
+// global image fix for our oversize images
+
+img {
+	max-width: 100%;
+	vertical-align: top;
+}
+
+// estate
+
+img.map {
+	border:1px solid #a1acb2;
+}
+
+// estate list
+
+.estate-list li {
+	border-top:1px solid #a1acb2;
+	margin-bottom:60px;
+}
+
+.estate-list li h3 {
+	margin-top:25px;
+}
+
+.estate-list div.developer {
+	width:80%;
+	float:left;
+}
+
+.estate-list div.date {
+	width:20%;
+	float:right;
+	text-align: right;
+	font-size:80%;
+}
+
+
+// development plans
+
+.plot-list .column-status {
+
+}
+
+.plot-list .column-plot {
+	width:15%;
+}
+
+.plot-list .column-address {
+	width:25%;
+}
+
+.plot-list .column-status {
+	width:60%;
+}
+
+
+// plot page
+
+.registrability-panel {
+	margin-top:60px;
+}
+
+.registrability-panel2 {
+  margin-top:30px;
+  margin-bottom:30px;
+}
+
+//.estate-location
+.estate-location {
+    margin-top:45px;
+    text-align: right;
+}
+
+.estate-location img {
+    display: block;
+    margin-left:auto;
+}
+
+//'lozange' highlighting
+.lozange {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight:800;
+  vertical-align: baseline;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+
+.float-lozange {
+  float: left;
+
+}
+
+
+//'lozange' highlighting
+.lozenge {
+  text-align: center;
+  color: #FFFFFF;
+  font-weight:800;
+  vertical-align: baseline;
+  // text-transform: uppercase;
+  padding-top: 3px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.float-lozenge {
+  float: left;
+
+}
+
+.green {
+  background-color: #00823B;
+}
+
+.turquoise {
+  background-color: #28A197;
+}
+
+.orange {
+  background-color: #FFBF47;
+}
+
+.red {
+  background-color: #B10E1E;
+}
+
+.white {
+  background-color: #FFFFFF;
+}
+
+//draft-title
+.draft-title {
+  background-color: #005EA5;
+  margin-top:45px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.draft-title-box {
+    background-color:  #FFFFFF;
+    margin-top:45px;
+    margin-bottom:45px;
+    color: #0B0C0C;
+    text-align: left;
+}
