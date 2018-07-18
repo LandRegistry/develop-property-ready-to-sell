@@ -1,0 +1,160 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <!-- <a href="#" class="link-back">Back</a> -->
+
+      <h1 class="govuk-heading-l">
+        Development plans: {{ data['estate-name'] }}
+      </h1>
+
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="govuk-heading-m">
+        Development name
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Development name and address
+          </dt>
+          <dd class="cya-answer">
+<!--             Westway Estate Phase 2<br />
+            North Plymouth <br/>
+            PL1 2HB -->
+            {{ data['estate-name'] }} <br />
+            {{ data['estate-address-1'] }} <br />
+            {{ data['estate-address-2'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden-focusable"> development name and address</span>
+            </a>
+          </dd>
+        </div>
+      </dl>
+
+
+      <h2 class="govuk-heading-m">
+        Plan details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Estate layout files
+          </dt>
+          <dd class="cya-answer">
+            {{ data['cad_uploads'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="05-upload-cad">
+              Change<span class="govuk-visually-hidden-focusable"> digital layout file</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Prececdent deeds file
+          </dt>
+          <dd class="cya-answer">
+            {{ data['deed_uploads'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="06-upload-deeds">
+              Change<span class="govuk-visually-hidden-focusable"> precedent deeds</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+      <h2 class="govuk-heading-m">
+        Contact details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Contact email
+          </dt>
+          <dd class="cya-answer">       
+            {{ data['email'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="07-contact-email">
+              Change<span class="govuk-visually-hidden-focusable"> contact email</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Developer
+          </dt>
+          <dd class="cya-answer">
+            {{ data['dev-name'] }} <br />
+            {{ data['dev-address-1'] }} <br />
+            {{ data['dev-address-2'] }} <br />
+            {{ data['dev-address-3'] }} <br />
+            {{ data['dev-address-4'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="08-developer">
+              Change<span class="govuk-visually-hidden-focusable"> developer</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Conveyancer
+          </dt>
+          <dd class="cya-answer">
+            {{ data['conv-name'] }} <br />
+            {{ data['conv-address-1'] }} <br />
+            {{ data['conv-address-2'] }} <br />
+            {{ data['conv-address-3'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="09-conveyancer">
+              Change<span class="govuk-visually-hidden-focusable"> conveyancer</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+      <h2 class="govuk-heading-m">Now submit your development plans</h2>
+
+      <p class="text">
+        By submitting this information you are confirming that, to the best of your knowledge, the details you are providing are correct at this time.
+      </p>
+
+      <div class="govuk-form-group">
+        <a href="11-confirmation" class="button">Accept and send application</a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

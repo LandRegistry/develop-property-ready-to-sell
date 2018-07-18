@@ -1,0 +1,162 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <!-- <a href="#" class="link-back">Back</a> -->
+
+      <h1 class="govuk-heading-l">
+        Check your answers before submitting your development plans
+      </h1>
+
+
+      <!-- only add a heading for a list if there is more than one list -->
+      <h2 class="govuk-heading-m">
+        Plan details
+      </h2>
+
+      <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
+      <!--   * `cya-questions-short` for short questions -->
+      <!--   * `cya-questions-long` for long questions -->
+      <!--   * none for single group of q&a -->
+      <dl class="govuk-check-your-answers cya-questions-short">
+
+<!--    need to add pages to collect development name and address     
+        <div>
+          <dt class="cya-question">
+            Development name and address
+          </dt>
+          <dd class="cya-answer">
+            Westway Estate Phase 2<br />
+            North Plymouth <br/>
+            PL1 2HB
+            {{ data['estate-name'] }}
+            {{ data['estate-address'] }}
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden-focusable"> development name and address</span>
+            </a>
+          </dd>
+        </div> -->
+
+
+        <div>
+          <dt class="cya-question">
+            Estate layout files
+          </dt>
+          <dd class="cya-answer">
+            westway-estate.dxf
+            <!-- {{ data['cad_uploads'] }} -->
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden-focusable"> digital layout file</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Prececdent deeds file
+          </dt>
+          <dd class="cya-answer">
+            westway-new-title-deeds.pdf
+            <!-- {{ data['deed_uploads'] }} -->
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden-focusable"> precedent deeds</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+      <h2 class="govuk-heading-m">
+        Contact details
+      </h2>
+
+      <dl class="govuk-check-your-answers cya-questions-short">
+        <div>
+          <dt class="cya-question">
+            Contact email
+          </dt>
+          <dd class="cya-answer">
+            graham.thomas@sandersonshomes.co.uk
+            <!-- {{ data['email'] }} -->
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden-focusable"> contact email</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Developer
+          </dt>
+          <dd class="cya-answer">
+            Sanderson Homes<br />
+            Alston Towers<br />
+            North Alerton<br />
+            Derby<br />
+            DB1 3NB
+            <!-- {{ data['dev-name'] }} -->
+            <!-- {{ data['dev-address'] }} -->
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden-focusable"> developer</span>
+            </a>
+          </dd>
+        </div>
+
+        <div>
+          <dt class="cya-question">
+            Conveyancer
+          </dt>
+          <dd class="cya-answer">
+            Barrow &amp; Co Solicitors<br />
+            23 Hyde Park<br />
+            Plymouth<br />
+            <!-- {{ data['conv-name'] }} -->
+            <!-- {{ data['conv-address'] }} -->
+            PL3 2ED
+          </dd>
+          <dd class="cya-change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden-focusable"> conveyancer</span>
+            </a>
+          </dd>
+        </div>
+
+      </dl>
+
+
+      <h2 class="govuk-heading-m">Now submit your development plans</h2>
+
+      <p class="text">
+        By submitting this information you are confirming that, to the best of your knowledge, the details you are providing are correct at this time.
+      </p>
+
+      <div class="govuk-form-group">
+        <a href="11-confirmation" class="button">Accept and send application</a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

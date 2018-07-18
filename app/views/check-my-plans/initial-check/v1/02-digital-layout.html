@@ -1,0 +1,58 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/check-my-plans/initial-check/v1/03-upload-cad" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Do you have a CAD estate layout?
+        </h1>
+
+        <div class="govuk-form-group">
+          <fieldset class="">
+
+            <legend class="visuallyhidden">Do you have CAD data?</legend>
+
+            <div class="multiple-choice">
+              <input id="CADTrue" type="radio" name="hasCAD" value="true">
+              <label for="CADTrue">Yes</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="CADFalse" type="radio" name="hasCAD" value="false">
+              <label for="CADFalse">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+      <div class="panel panel-border-narrow">
+        <p>
+          Compliant CAD data means we can perform the checks within 2 days.
+        </p>
+
+        <p><a href="https://kb.ros.gov.uk/using-our-services/development-plan-approval/dpa-for-architects">Guidance for CAD data, format and content</a></p>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

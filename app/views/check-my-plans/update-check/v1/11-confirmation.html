@@ -1,0 +1,45 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-box-highlight">
+        <h1 class="govuk-heading-xl">
+          Revised plan submission complete
+        </h1>
+<!--         <p class="font-large">
+          Your reference number is <br>
+          <strong class="govuk-!-font-weight-bold">HDJ2123F</strong>
+        </p>
+        <p>Use your reference number when submitting any change to this development plan</p> -->
+      </div>
+
+      <p>
+        We have sent a confirmation email to <span class="govuk-!-font-weight-bold">{{ data['email'] }}</span>.
+      </p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>We will check the registrability of your revised plans.  This will take up to 2 days.</p>
+      <p>We will publish the revised development plans.</p>
+      <p>We will notify you of any problems we forsee in registering any of this development.</p>
+      <p><a href="https://www.gov.uk/service-manual/user-centred-design/resources/patterns/feedback-pages.html">What did you think of this service?</a> (takes 30 seconds)</p>
+
+
+    </div>
+  </div>
+
+
+
+{% endblock %}

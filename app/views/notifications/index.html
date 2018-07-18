@@ -1,0 +1,84 @@
+{% extends "layout-debranded.html" %}
+
+{% block page_title %}
+  Develop land and property - Alpha
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        Notifications
+      </h1>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row"> 
+    <div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-body-lead">Notifying people of important events</p>
+
+
+      <p>These pages show how we could notify people on important events</p>
+
+      <p>Managing by excepttion: we want to only nofity people when there is a problem - for example if a plan is incapable of registration.</p>
+
+      <p>There are probably other important events, that should trigger a notification - that are not problems - like your plan check was successful.  Perhaps also - the plots have been surveyed.</p>
+
+      <p>Notifications, shown here are emails, but they could be other delivery mechanisms for example an API, RSS feed, etc.
+
+      <h2 class="govuk-heading-s">Potential people to notify</h2>
+      <ul class="list-bullet">
+        <li>developer - including their architects/tech office; the site manager</li>
+        <li>devlopers conveyancer</li>
+        <li>Ordnance survey</li>
+        <li>Internal HMLR Teams</li>
+        <li>buyers conveyancer</li>
+        <li>buyers lender</li>
+        <li>buyer</li>
+        <li>local resident - someone already moved in next door, or estate neighbours</li>
+      </ul>
+
+
+      <h2 class="govuk-heading-l">Example notifications<span class="heading-secondary">Version 1, Wed, 9th May</span></h2>
+
+      <ul class="list-bullet">
+        <li><a href="notifications/v1/plan-good">plans checked - everything ok </a></li>
+        <li><a href="notifications/v1/plan-problem-plot">plans checked - problem with plot 1</a></li>
+      </ul>
+
+
+
+
+      <hr>
+      
+      <h2 class="govuk-heading-l">Feedback - yes please</h2>    
+      <p><a href="mailto:newbuildsresearch@landregistry.gov.uk?Subject=Prototype - notifications" target="_top">email us your feedback</a></p>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+<!--       <div class="supplementary-panel">
+
+        <h2 class="govuk-heading-m">Made from</h2>
+        <ul class="list-bullet">
+          <li><span class="govuk-!-font-weight-bold"><a href="check-my-plans/initial-check">Check my estate plan</a></span> - version 1
+          </li>
+        </ul>
+
+      </div>  --> 
+      <!-- end panel -->
+
+    </div>  <!-- end column third -->
+
+  </div>
+
+
+{% endblock %}
+
+

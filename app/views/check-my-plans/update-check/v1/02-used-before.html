@@ -1,0 +1,53 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/check-my-plans/update-check/v1/03-get-my-plans" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Revised plans?
+        </h1>
+
+        <p>Is this your first time submitting plans for the development, or are you submitting revised plans for an existing development?</p>
+
+        <div class="govuk-form-group">
+          <fieldset class="">
+
+            <legend class="visuallyhidden">new or revised plans for the development?</legend>
+
+            <div class="multiple-choice">
+              <input id="RevisedTrue" type="radio" name="RevisedPlans" value="true">
+              <label for="RevisedTrue">Revised plans for development</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="RevisedFalse" type="radio" name="RevisedPlans" value="false">
+              <label for="RevisedFalse">First time submitting development plans</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+{% endblock %}

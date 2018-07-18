@@ -1,0 +1,59 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/check-my-plans/initial-check/v1/09-conveyancer" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Developers conveyancer?
+        </h1>
+
+        <p>You can add the conveyancer acting on behalf of the devloper.</p>
+
+        <div class="govuk-form-group">
+          <fieldset class="">
+
+            <legend class="visuallyhidden">Development conveyancer?</legend>
+
+            <div class="multiple-choice">
+              <input id="DevConvTrue" type="radio" name="hasConv" value="true">
+              <label for="DevConvTrue">Yes</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="DevConvFalse" type="radio" name="hasConv" value="false">
+              <label for="DevConvFalse">No</label>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+      <div class="panel panel-border-narrow">
+        <p>
+          You can add or change the conveyancer for the development later
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

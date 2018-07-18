@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-l">Westway Estate Phase 2</h2>
+
+    <p>North Plymouth<br>PL1 2HB<br></p>
+  </div>
+
+  <div class="govuk-grid-column-one-half estate-location">
+    <img src="/public/images/estate-view.jpg" alt="estate view" style="width:420px;height:280px;">
+  </div>
+
+</div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-m">Developer</h3>
+    <h4 class="govuk-heading-s">Sanderson Homes</h4>
+    <p>Alston Towers<br>North Alerton<br>Derby<br>DB1 3NB</p>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-m">Conveyancer</h3>
+    <h4 class="govuk-heading-s">Barrow & Co Solicitors</h4>
+    <p>23 Hyde Park<br>Plymouth<br>PL3 2ED</p>
+  </div>
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h3 class="govuk-heading-m">Development plans</h3>
+
+    <a href="03-development-plans">View the plans of the development submitted by the developer, and the generated plot layouts.</a>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

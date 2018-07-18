@@ -1,0 +1,48 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/check-my-plans/initial-check/v1/08-add-conveyancer" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Developer name and address
+        </h1>
+
+        <p>We will publish the name and address of the developer of this development</p>
+
+        <div class="govuk-form-group">
+          <label class="form-label" for="dev-name">Developer name</label>
+          <input class="form-control" id="dev-name" type="text" name="dev-name">
+        </div>
+
+
+        <div class="govuk-form-group">
+          <label class="form-label" for="dev-address">
+            Developer address
+          </label>
+          <textarea class="form-control form-control-3-4" name="dev-address" id="textarea" rows="5"></textarea>
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+{% endblock %}

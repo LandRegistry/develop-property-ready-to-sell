@@ -1,0 +1,46 @@
+{% extends "../../../layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block service_name %}
+  Check housing development plan
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="03b-setup-information" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Which development?
+        </h1>
+
+        <p>Use your contact email and development plans reference to access your development plans</p>
+
+        <div class="govuk-form-group">
+          <label class="form-label" for="username-email">Email address</label>
+          <input class="form-control" id="username-email" type="text" name="username-email">
+        </div>
+
+        <div class="govuk-form-group">
+          <label class="form-label" for="plan-ref">Plan reference</label>
+          <span class="form-hint">This is the reference number sent to you when the plan was first submitted<br />for example: HDJ2123F</span>
+          <input class="form-control" id="plan-ref" type="text" name="plan-ref">
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+{% endblock %}
