@@ -1,11 +1,11 @@
-{% extends "../../../layout.html" %}
+{% extends "layout.html" %}
 
 {% block page_title %}
   Check housing development plan
 {% endblock %}
 
-{% block service_name %}
-  Check housing development plan
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
 {% endblock %}
 
 
@@ -42,9 +42,9 @@
 
       <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/update-check/v1/06-upload-deeds">
         <div>
-          <label class="govuk-!-font-weight-bold" for="cad_uploads">Choose CAD files (DXF, DWG)</label>
+          <label class="govuk-label" for="cad_uploads">Choose CAD files (DXF, DWG)</label>
           <!-- <input type="file" id="cad_uploads" name="cad_uploads" accept=".dxf, .dwg" multiple> -->
-          <input type="file" id="cad_uploads" name="cad_uploads" multiple>
+          <input class="" type="file" id="cad_uploads" name="cad_uploads" multiple>
         </div>
         <div class="preview">
           <p>No CAD files currently selected for upload</p>

@@ -26,15 +26,15 @@
       </h2>
 
       <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
-      <!--   * `cya-questions-short` for short questions -->
-      <!--   * `cya-questions-long` for long questions -->
+      <!--   * `app-check-your-answers--short` for short questions -->
+      <!--   * `app-check-your-answers__questions-long` for long questions -->
       <!--   * none for single group of q&a -->
-      <dl class="govuk-check-your-answers cya-questions-short">
+      <dl class="app-check-your-answers app-check-your-answers--short">
         <div>
-          <dt class="cya-question">
+          <dt class="app-check-your-answers__question">
             Development name and address
           </dt>
-          <dd class="cya-answer">
+          <dd class="app-check-your-answers__answer">
 <!--             Westway Estate Phase 2<br />
             North Plymouth <br/>
             PL1 2HB -->
@@ -42,9 +42,9 @@
             {{ data['estate-address-1'] }} <br />
             {{ data['estate-address-2'] }}
           </dd>
-          <dd class="cya-change">
+          <dd class="app-check-your-answers__change">
             <a href="#">
-              Change<span class="govuk-visually-hidden-focusable"> development name and address</span>
+              Change<span class="govuk-visually-hidden"> development name and address</span>
             </a>
           </dd>
         </div>
@@ -55,31 +55,31 @@
         Plan details
       </h2>
 
-      <dl class="govuk-check-your-answers cya-questions-short">
+      <dl class="app-check-your-answers app-check-your-answers--short">
         <div>
-          <dt class="cya-question">
+          <dt class="app-check-your-answers__question">
             Estate layout files
           </dt>
-          <dd class="cya-answer">
+          <dd class="app-check-your-answers__answer">
             {{ data['cad_uploads'] }}
           </dd>
-          <dd class="cya-change">
+          <dd class="app-check-your-answers__change">
             <a href="05-upload-cad">
-              Change<span class="govuk-visually-hidden-focusable"> digital layout file</span>
+              Change<span class="govuk-visually-hidden"> digital layout file</span>
             </a>
           </dd>
         </div>
 
         <div>
-          <dt class="cya-question">
+          <dt class="app-check-your-answers__question">
             Prececdent deeds file
           </dt>
-          <dd class="cya-answer">
+          <dd class="app-check-your-answers__answer">
             {{ data['deed_uploads'] }}
           </dd>
-          <dd class="cya-change">
+          <dd class="app-check-your-answers__change">
             <a href="06-upload-deeds">
-              Change<span class="govuk-visually-hidden-focusable"> precedent deeds</span>
+              Change<span class="govuk-visually-hidden"> precedent deeds</span>
             </a>
           </dd>
         </div>
@@ -91,52 +91,52 @@
         Contact details
       </h2>
 
-      <dl class="govuk-check-your-answers cya-questions-short">
+      <dl class="app-check-your-answers app-check-your-answers--short">
         <div>
-          <dt class="cya-question">
+          <dt class="app-check-your-answers__question">
             Contact email
           </dt>
-          <dd class="cya-answer">       
+          <dd class="app-check-your-answers__answer">       
             {{ data['email'] }}
           </dd>
-          <dd class="cya-change">
+          <dd class="app-check-your-answers__change">
             <a href="07-contact-email">
-              Change<span class="govuk-visually-hidden-focusable"> contact email</span>
+              Change<span class="govuk-visually-hidden"> contact email</span>
             </a>
           </dd>
         </div>
 
         <div>
-          <dt class="cya-question">
+          <dt class="app-check-your-answers__question">
             Developer
           </dt>
-          <dd class="cya-answer">
+          <dd class="app-check-your-answers__answer">
             {{ data['dev-name'] }} <br />
             {{ data['dev-address-1'] }} <br />
             {{ data['dev-address-2'] }} <br />
             {{ data['dev-address-3'] }} <br />
             {{ data['dev-address-4'] }}
           </dd>
-          <dd class="cya-change">
+          <dd class="app-check-your-answers__change">
             <a href="08-developer">
-              Change<span class="govuk-visually-hidden-focusable"> developer</span>
+              Change<span class="govuk-visually-hidden"> developer</span>
             </a>
           </dd>
         </div>
 
         <div>
-          <dt class="cya-question">
+          <dt class="app-check-your-answers__question">
             Conveyancer
           </dt>
-          <dd class="cya-answer">
+          <dd class="app-check-your-answers__answer">
             {{ data['conv-name'] }} <br />
             {{ data['conv-address-1'] }} <br />
             {{ data['conv-address-2'] }} <br />
             {{ data['conv-address-3'] }}
           </dd>
-          <dd class="cya-change">
+          <dd class="app-check-your-answers__change">
             <a href="09-conveyancer">
-              Change<span class="govuk-visually-hidden-focusable"> conveyancer</span>
+              Change<span class="govuk-visually-hidden"> conveyancer</span>
             </a>
           </dd>
         </div>
