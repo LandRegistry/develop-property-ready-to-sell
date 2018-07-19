@@ -1,11 +1,11 @@
-{% extends "../../../layout.html" %}
+{% extends "layout.html" %}
 
 {% block page_title %}
   Check housing development plan
 {% endblock %}
 
-{% block service_name %}
-  Check housing development plan
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
 {% endblock %}
 
 
@@ -38,7 +38,7 @@
 
       <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/initial-check/v1/06-contact-email">
         <div>
-          <label class="govuk-!-font-weight-bold" for="deed_uploads">Choose files</label>
+          <label class="govuk-label" for="deed_uploads">Choose files</label>
           <input type="file" id="deed_uploads" name="deed_uploads" multiple>
         </div>
         <div class="preview">

@@ -1,11 +1,11 @@
-{% extends "../../../layout.html" %}
+{% extends "layout.html" %}
 
 {% block page_title %}
   Check housing development plan
 {% endblock %}
 
-{% block service_name %}
-  Check housing development plan
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -32,7 +32,7 @@
           <label class="govuk-label" for="dev-address">
             Developer address
           </label>
-          <textarea class="govuk-input govuk-input-3-4" name="dev-address" id="textarea" rows="5"></textarea>
+          <textarea class="govuk-textarea govuk-!-width-two-thirds" name="dev-address" id="textarea" rows="5"></textarea>
         </div>
 
         <div class="govuk-form-group">
