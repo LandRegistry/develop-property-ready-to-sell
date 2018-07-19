@@ -1,12 +1,13 @@
-{% extends "../../../layout.html" %}
+{% extends "layout.html" %}
 
-{% block page_title %}
-  Check housing development plan
+{% block page_itle %}
+  Check your answers
 {% endblock %}
 
-{% block service_name %}
-  Check housing development plan
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
 {% endblock %}
+
 
 {% block content %}
 
@@ -30,7 +31,7 @@
       <!--   * `app-check-your-answers__questions-long` for long questions -->
       <!--   * none for single group of q&a -->
       <dl class="app-check-your-answers app-check-your-answers--short">
-        <div>
+        <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Development name and address
           </dt>
@@ -56,7 +57,7 @@
       </h2>
 
       <dl class="app-check-your-answers app-check-your-answers--short">
-        <div>
+        <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Estate layout files
           </dt>
@@ -70,7 +71,7 @@
           </dd>
         </div>
 
-        <div>
+        <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Prececdent deeds file
           </dt>
@@ -92,7 +93,7 @@
       </h2>
 
       <dl class="app-check-your-answers app-check-your-answers--short">
-        <div>
+        <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Contact email
           </dt>
@@ -106,7 +107,7 @@
           </dd>
         </div>
 
-        <div>
+        <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Developer
           </dt>
@@ -124,7 +125,7 @@
           </dd>
         </div>
 
-        <div>
+        <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Conveyancer
           </dt>
