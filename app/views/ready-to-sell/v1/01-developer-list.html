@@ -1,0 +1,95 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+
+
+  <h2 class="govuk-heading-l">Developments</h2>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="developments">Find a development</label>
+        <input class="govuk-input" id="developments" type="text" name="developments">
+
+        <a class="govuk-button" href="***" role="button">Search</a>
+      </div>
+
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+
+      <div class="govuk-form-group" align='right'>
+        <label class="govuk-label" for="select-box">Filter by developer</label>
+          <select class="govuk-input" id="select-box" name="select-box">
+            <option>developers</option>
+          </select>
+
+          <p></p>
+
+        <label class="govuk-label" for="select-box">Filter by county</label>
+          <select class="govuk-input" id="select-box" name="select-box">
+            <option>counties</option>
+          </select>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-form-group">
+        <table>
+          <tbody>
+            <tr>
+              <td><p><a href="***">Sherford, Peacock, Peterborough, PE18</a></p>
+              <p>Taylor Wimpey</p></td>
+              <td>17 March 2018</td>
+            </tr>
+            <tr>
+              <td><p><a href="02-estate-view">Westway Estate, Phase 2, North Plymouth, PL1 2HB</a></p>
+              <p>Sanderson Homes</p></td>
+              <td>20 February March 2018</td>
+            </tr>
+            <tr>
+              <td><p><a href="***">Gwel An Hay, Hay Common, Launceston, Cornwall</a></p>
+              <p>Barrett</p></td>
+              <td>03 February 2018</td>
+            </tr>
+            <tr>
+              <td><p><a href="***">Coombe Park, Sheffield</a></p>
+              <p>Persimmon</p></td>
+              <td>31 January 2018</td>
+            </tr>
+            <tr>
+              <td><p><a href="***">Williams Gate, Chester</a></p>
+              <p>Bovis Homes</p></td>
+              <td>27 January 2018</td>
+            </tr>
+            <tr>
+              <td><p><a href="***">Franklin Gardens, Brighton</a></p>
+              <p>Persimmon</p></td>
+              <td>16 January 2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+{% endblock %}

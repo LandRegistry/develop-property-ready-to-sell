@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-half">
+    <h2 class="govuk-heading-l">14 Gardinia Way (Plot 7)</h2>
+
+    <p>Westway Estate<br>Plymouth<br>PL1 2HB</p>
+  </div>
+
+  <div class="govuk-grid-column-one-half estate-location">
+    <img class="map" src="/public/images/estateplan7.jpg" alt="estate plan" style="width:420px;height:280px;">
+    <p>Plot 7, layout created from <a href="09-estate-plan">Estate Plan - 20 Feb 2018</a>
+
+  </div>
+
+</div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-m">Developer</h3>
+    <h4 class="govuk-heading-s">Sanderson Homes</h4>
+    <p>Alston Towers<br>North Alerton<br>Derby<br>DB1 3NB</p>
+  </div>
+
+  <div class="govuk-grid-column-one-third">
+    <h3 class="govuk-heading-m">Buyer</h3>
+    <h4 class="govuk-heading-s">Buyer not yet known</h4>
+  </div>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h3 class="govuk-heading-m">HM land Registry property checks</h3>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Plot extent:  OK</li>
+        <li>Survey:    OK</li>
+        <li>No consent required</li>
+        <li>Power of attorney:  OK</li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h3 class="govuk-heading-m">I am ready to complete the sale of this plot</h3>
+
+    <p>
+      <a class="govuk-button" href="08-confirmation" role="button">Continue</a>
+    </p>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+{% endblock %}

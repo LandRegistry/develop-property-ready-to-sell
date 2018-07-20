@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h2 class="govuk-heading-l">Sign in</h2>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="user-name">Username</label>
+        <input class="govuk-input" id="user-name" type="text" name="user-name">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="password">Password</label>
+        <input class="govuk-input" id="password" type="text" name="password">
+      </div>
+
+      <p>
+        <a class="govuk-button" href="07-plot-view-lock" role="button">Sign in</a>
+      </p>
+
+    </div>
+  </div>
+
+
+
+{% endblock %}

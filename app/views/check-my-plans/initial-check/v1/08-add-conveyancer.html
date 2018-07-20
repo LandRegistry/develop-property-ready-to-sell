@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/check-my-plans/initial-check/v1/09-conveyancer" method="get" class="form">
+
+
+        <div class="govuk-form-group">
+          <fieldset  class="govuk-fieldset">
+
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                Developers conveyancer?
+              </h1>
+
+              <!-- <p>You can add the conveyancer acting on behalf of the devloper.</p> -->
+            </legend>
+
+            <p>You can add the conveyancer acting on behalf of the devloper.</p>
+
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="DevConvTrue" type="radio" name="hasConv" value="true">
+                <label class="govuk-label govuk-radios__label" for="DevConvTrue">Yes</label>
+              </div>
+
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="DevConvFalse" type="radio" name="hasConv" value="false">
+                <label class="govuk-label govuk-radios__label" for="DevConvFalse">No</label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="govuk-button" value="Continue">
+        </div>
+
+      </form>
+
+      <div class="panel panel-border-narrow">
+        <p>
+          You can add or change the conveyancer for the development later
+        </p>
+
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}

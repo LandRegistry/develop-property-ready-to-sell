@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+    
+
+      <h1 class="govuk-heading-xl">
+        Do you plan to have additional deeds later?
+      </h1>
+
+      <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/initial-check/v1/06-contact-email">
+
+        <p>
+          If you plan to apply new deeds before completion and final registration, you can supply them, to check for registrability, later.
+        </p>
+
+        <div class="govuk-form-group">
+            <input type="submit" class="govuk-button" value="Continue">
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

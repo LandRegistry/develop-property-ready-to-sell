@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Start page example
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-full draft-title">
+      <h1 class="govuk-heading-xl">Draft title register</h1>
+
+      <div class="notice draft-title-box">
+        <i class="icon icon-important">
+          <span class="govuk-visually-hidden">Warning</span>
+        </i>
+        <strong class="govuk-!-font-weight-bold-small">
+          This title is being drafted.
+            <a href=""> What has been drafted so far, and what is left to consider?</a>
+        </strong>
+      </div>
+
+      <div class="notice  draft-title-box">
+        <i class="icon icon-important">
+          <span class="govuk-visually-hidden">Warning</span>
+        </i>
+        <strong class="govuk-!-font-weight-bold-small">
+          warning Some parts of this plan are unregistrable.
+        </strong>
+      </div>
+
+    </div>
+  </div>
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-one-half">
+    <p><strong class="govuk-!-font-weight-bold-small">
+      Title number:
+    </strong>DN340056</p>
+    <p><strong class="govuk-!-font-weight-bold-small">
+      Address:
+    </strong><div class="lozange orange float-lozange">unknown</div></p>
+    <p><strong class="govuk-!-font-weight-bold-small">
+      Owner:
+    </strong></p>
+  </div>
+
+  <div class="govuk-grid-column-one-half estate-location">
+    <img src="/public/images/plot1.jpg" alt="estate plan" style="width:420px;height:280px;">
+    <p>Plot 1, layout created from <a href="09-estate-plan">Estate Plan - 20 Feb 2018</a>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h3 class="govuk-heading-m">Rights and restrictions</h3>
+
+    <p>Your rights to the property and restriction on the property.</p>
+
+    <p>You can cross the shared driveway (plot 279) to get to your garages on the west side of plot 280.</p>
+
+    <p>You own the boundary features (fences) to the West and the South side of the property.</p>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
