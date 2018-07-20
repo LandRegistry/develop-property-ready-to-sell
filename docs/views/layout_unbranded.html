@@ -1,5 +1,6 @@
 {% extends "template.njk" %}
 
+
 {% block headIcons %}
   <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
   <link rel="mask-icon" href="{{ asset_path }}images/gov.uk_logotype_crown.svg?0.18.3" color="#0b0c0c">
@@ -10,6 +11,7 @@
 {% endblock %}
 
 {% block head %}
+{% include "includes/head.html" %}
   <link href="/public/stylesheets/unbranded.css" media="screen" rel="stylesheet" type="text/css">
 {% endblock %}
 
