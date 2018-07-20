@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/check-my-plans/update-check/v10/03-get-my-plans" method="get" class="form">
+
+    <!--     <h1 class="govuk-heading-xl">
+          Revised plans?
+        </h1>
+
+        <p>Is this your first time submitting plans for the development, or are you submitting revised plans for an existing development?</p>
+ -->
+        <div class="govuk-form-group">
+
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                Revised plans?
+              </h1>
+            </legend>
+
+            <p>Is this your first time submitting plans for the development, or are you submitting revised plans for an existing development?</p>
+
+
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="RevisedTrue" name="RevisedPlans" type="radio" value="true">
+                <label class="govuk-label govuk-radios__label" for="RevisedTrue">Revised plans for development</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="RevisedFalse" name="RevisedPlans" type="radio" value="false">
+                <label class="govuk-label govuk-radios__label" for="RevisedFalse">First time submitting development plans</label>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+<!--         <div class="govuk-form-group">
+
+            <div class="multiple-choice">
+              <input id="RevisedTrue" type="radio" name="RevisedPlans" value="true">
+              <label for="RevisedTrue">Revised plans for development</label>
+            </div>
+
+            <div class="multiple-choice">
+              <input id="RevisedFalse" type="radio" name="RevisedPlans" value="false">
+              <label for="RevisedFalse">First time submitting development plans</label>
+            </div>
+
+        </div> -->
+      
+        <div class="govuk-form-group">
+          <button type="submit" class="govuk-button">Continue</button>
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+{% endblock %}
