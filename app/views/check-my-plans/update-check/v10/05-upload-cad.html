@@ -12,21 +12,6 @@
 
 {% block content %}
 
-<style type="text/css">
-
-#cad_uploads {
-  margin-top: 25px;
-}
-
-.preview {
-  margin-top:15px;
-}
-
-</style>
-
-
-
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
@@ -42,10 +27,12 @@
 
       <!-- <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/update-check/v10/06-upload-deeds"> -->
       <form id="file-selector" method="get" enctype="multipart/form-data" action="/check-my-plans/update-check/v10/07-contact-email">
+
+
         <div>
           <label class="govuk-label" for="cad_uploads">Choose CAD files (DXF, DWG)</label>
           <!-- <input type="file" id="cad_uploads" name="cad_uploads" accept=".dxf, .dwg" multiple> -->
-          <input class="" type="file" id="cad_uploads" name="cad_uploads" multiple>
+          <input class="govuk-file-upload" type="file" id="cad_uploads" name="cad_uploads" multiple>
         </div>
         <div class="preview">
           <p>No CAD files currently selected for upload</p>
