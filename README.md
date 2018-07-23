@@ -18,11 +18,11 @@ This new prototype will take a more focused view, and will contain work from the
 
 developer = developer and developers conveyancer
 
-I'm a developer and I want to check my plans to develop properties will be registrable.
+I'm a developer and I want to check my plans to develop properties will be registrable
 
-I'm a developer and I've updated my plans for the development/properties I'm building.
+I'm a developer and I've updated my plans for the development/properties I'm building
 
-I'm a developer and I want to be notified if something is a problem.
+I'm a developer and I want to be notified if something is a problem
 
 I'm a developer and I'm ready to sell properties
 
@@ -41,6 +41,8 @@ I'm acting on behalf or the buyer and need to explain to the buyer information a
 
 I'm considering properties in my local area and i want to see what i might want to buy
 
+I'm buying/acting on behalf of the buyer (and lender) and I want to be notified if something is a problem
+
 
 ### HM Land Registry
 
@@ -54,6 +56,8 @@ I/We need to check the plan against the survey of the site
 ### Ordnance Survey
 
 I/We need to survey the estate to record what has been built, where.
+
+I/We need to understand if any structures on site are not only temporary
 
 
 ### Lenders
