@@ -33,13 +33,13 @@ I'm a developer and I need to share the plans with other parties
 
 buyer = buyers conveyancer, buyer, mortgage lender
 
-I'm acting on behalf or the buyer and need to see plans of the estate/plot
+I'm acting on behalf of the buyer and need to see plans of the estate/plot
 
-I'm acting on behalf or the buyer and need to refer to plans of the estate/plot
+I'm acting on behalf of the buyer and need to refer to plans of the estate/plot
 
-I'm acting on behalf or the buyer and need to explain to the buyer information about the plot
+I'm acting on behalf of the buyer and need to explain to the buyer information about the plot
 
-I'm considering properties in my local area and i want to see what i might want to buy
+I'm considering properties in my local area and I want to see what I might want to buy
 
 I'm buying/acting on behalf of the buyer (and lender) and I want to be notified if something is a problem
 
