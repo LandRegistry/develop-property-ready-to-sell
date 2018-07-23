@@ -38,6 +38,23 @@
 }
 
 
+////////////////////////////////////
+// preview list - CAD files upladed
+////////////////////////////////////
+
+#cad_uploads {
+  margin-top: 25px;
+}
+
+.preview {
+  margin-top:15px;
+}
+
+.preview ol {
+  list-style:none;
+  -webkit-padding-start: 0px;
+}
+
 
 // AP TODO
 // rewrite these styles (LR and mine - BEM them) - because new kit, new styles
