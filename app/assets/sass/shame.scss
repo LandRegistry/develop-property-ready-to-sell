@@ -56,6 +56,109 @@
 }
 
 
+/////////////////////
+// language switcher
+/////////////////////
+
+.language-switcher {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  text-align: right;
+  margin-top: 15px;
+}
+
+@media (min-width: 641px) {
+  .language-switcher {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.language-switcher form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.no-flexbox .language-switcher form {
+  display: block;
+}
+
+.language-switcher-current {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px 0 0;
+  margin: 0 5px 0 0;
+}
+
+.language-switcher-invert .language-switcher-current {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.language-switcher-current:after {
+  height: 66%;
+  width: 1px;
+  background-color: #0b0c0c;
+  display: block;
+  content: '';
+  position: absolute;
+  top: 16.66%;
+  right: 0;
+}
+
+.language-switcher-invert .language-switcher-current {
+  padding: 0 0 0 5px;
+  margin: 0 0 0 5px;
+}
+
+.language-switcher-invert .language-switcher-current:after {
+  right: auto;
+  left: 0;
+}
+
+.no-flexbox .language-switcher-invert .language-switcher-current,
+.lte-ie8 .language-switcher-invert .language-switcher-current {
+  padding: 0 5px 0 0;
+  margin: 0 5px 0 0;
+}
+
+.no-flexbox .language-switcher-invert .language-switcher-current:after,
+.lte-ie8 .language-switcher-invert .language-switcher-current:after {
+  right: 0;
+  left: auto;
+}
+
+.language-switcher-button {
+  background: transparent none;
+  border: 0;
+  border-radius: 0;
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0;
+  text-decoration: underline;
+  color: #005ea5;
+  cursor: pointer;
+  line-height: inherit;
+  margin: 0;
+}
+
+.language-switcher-button:active {
+  color: #2b8cc4;
+}
+
+.language-switcher-button:hover, .language-switcher-button:focus {
+  color: #2b8cc4;
+}
+
+
 // AP TODO
 // rewrite these styles (LR and mine - BEM them) - because new kit, new styles
 
