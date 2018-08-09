@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Westway Estate Phase 2
+{% endblock %}
+
+{% block service_name %}
+  
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl spacing-bottom-flushx">
+           Housing Development
+        </h1>
+		</div>
+	</div>
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-one-half">
+
+			<div class="">
+				<h2 class="govuk-heading-l spacing-bottom-flush">
+           Westway Estate, Phase 2
+        </h2>
+        <p class="govuk-heading-l spacing-top-flush">North Plymouth <br/>
+         PL1 2HB
+        </p>
+
+			</div>
+		</div>
+
+		<div class="govuk-grid-column-one-half">
+			<div class="estate-location spacing-top-flush">
+				<img class="map" src="/public/images/westway-estate.png">
+			</div>
+		</div>
+		<!-- estate map -->
+	</div>
+	<!-- end first row -->
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-one-quarter">
+			<h2 itemprop="name" class="govuk-heading-m">Developer</h2>
+			<div class="govuk-body" itemscope itemtype="http://schema.org/Organization">
+				
+				<span itemprop="name" class="govuk-!-font-weight-bold">Sanderson Homes</span>
+		  	<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		    
+			    <span class="address__line" itemprop="streetAddress">
+			      Alston Towers
+			    </span>
+			    <span class="address__line" itemprop="streetAddress">
+			      North Alerton
+			    </span>			    
+			    <span class="address__line" itemprop="addressLocality">Derby</span>
+			    <span class="address__line" itemprop="postalCode">DB1 3NB</span>
+			  </div>
+
+			</div>
+
+		</div>
+
+		<div class="govuk-grid-column-one-quarter">
+			<h2 itemprop="name" class="govuk-heading-m">Developer's conveyancer</h2>
+			<div class="govuk-body" itemscope itemtype="http://schema.org/Organization">
+				
+					<span itemprop="name" class="govuk-!-font-weight-bold">Barrow &amp; Co Solicitors</span>
+		  	<div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+		    
+			    <span class="address__line" itemprop="streetAddress">
+			      23 Hyde Park
+			    </span>         			    
+			    <span class="address__line" itemprop="addressLocality">Plymouth</span>
+			    <span class="address__line" itemprop="postalCode">PL3 2ED	</span>
+			  </div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="govuk-grid-row spacing-top-single">
+		<div class="govuk-grid-column-two-thirds">
+			<h2 class="govuk-heading-l">Estate layout plans</h2>
+			<p>The current <a href="westway/estate-layout">estate layout plan</a>, updated on 18th July 2018.</p>
+
+		</div>
+
+
+		<div class="govuk-grid-column-one-third">
+
+		</div>
+	</div>
+
+<br/>
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h2 class="govuk-heading-m">Feedback</h2>
+			<p>This is a new, trial service - <a href="#">feedback</a> will help us improve it</p>
+		</div>
+	</div>
+
+<!-- 	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h2 class="govuk-heading-m">Planning applications</h2>
+			<p><a href="https://planning.plymouth.gov.uk/online-applications/simpleSearchResults.do?action=firstPage">Planning applications held by Plymouth Council</a> for the development of the site, new roads and surrounding amenities.</p>
+		</div>
+
+
+		<div class="govuk-grid-column-one-third">
+
+
+		</div>
+
+	</div> -->
+	<!-- end 2nd row -->
+  
+
+{% endblock %}
+
+  {% block footer %}
+    {{ govukFooter({
+      meta: {
+        items: [
+          {
+            href: "/",
+            text: "Terms of use"
+          },
+          {
+            href: "/",
+            text: "Cookies"
+          }
+        ]
+      }
+    }) }}
+  {% endblock %}

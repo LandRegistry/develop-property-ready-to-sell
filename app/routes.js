@@ -205,4 +205,16 @@ router.get('/check-my-plans/update-check/v10/03b-setup-information', function (r
 })
 
 
+// /////////////////////////////////
+// MVP1 - estate page and pdf
+// /////////////////////////////////
+router.get('/housing-developments/westway', function (req, res) {
+    res.render('mvp1/v10/estate')
+})
+
+router.get('/housing-developments/westway/estate-layout', function (req, res) {
+    res.redirect('/public/images/westway.pdf')
+})
+
+
 module.exports = router
