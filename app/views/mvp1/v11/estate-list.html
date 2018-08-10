@@ -35,7 +35,7 @@
 	<div class="govuk-grid-row">
 
 		<div class="govuk-grid-column-two-thirds">
-			<p class="govuk-body-x">Current housing and developments in England and Wales.</p>
+			<p class="govuk-body-x">Current housing and property developments in England and Wales, of over 10 homes.</p>
 
 		</div>
 
@@ -139,7 +139,7 @@
 
 					<li class="estate-row">
 						<div>
-							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Williams Gate, Chester</a></h3>
+							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Williams Gate, Cardiff</a></h3>
 							<div class="developer">
 								<p>Bovis Homes</p>
 							</div>
@@ -167,6 +167,22 @@
 		</div>
 	</div>
 
-  
 
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+        	href: "https://www.gov.uk/help/cookies",
+          text: "Cookies"
+        },
+        {
+          href: "https://www.gov.uk/help/terms-conditions",
+          text: "Terms of use"
+        }
+      ]
+    }
+  }) }}
 {% endblock %}
