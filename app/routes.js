@@ -1,5 +1,6 @@
 const express = require('express')
 const router = express.Router()
+const path = require("path")
 
 // Route index page
 router.get('/', function (req, res) {
@@ -207,13 +208,28 @@ router.get('/check-my-plans/update-check/v10/03b-setup-information', function (r
 
 // /////////////////////////////////
 // MVP1 - estate page and pdf
+// V10
 // /////////////////////////////////
 router.get('/housing-developments/westway', function (req, res) {
     res.render('mvp1/v10/estate')
 })
 
 router.get('/housing-developments/westway/estate-layout', function (req, res) {
-    res.redirect('/public/images/westway.pdf')
+    res.sendFile(path.resolve('public/images/westway.pdf'))
+})
+
+
+// ///// V11 ////////////
+router.get('/11/housing-developments/westway', function (req, res) {
+    res.render('mvp1/v11/estate')
+})
+
+router.get('/11/housing-developments', function (req, res) {
+    res.render('mvp1/v11/estate-list')
+})
+
+router.get('/11/housing-developments/westway/estate-layout', function (req, res) {
+    res.sendFile(path.resolve('public/images/westway.pdf'))
 })
 
 

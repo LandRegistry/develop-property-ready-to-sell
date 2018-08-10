@@ -1,0 +1,172 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Westway Estate Phase 2
+{% endblock %}
+
+{% block service_name %}
+  
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="mailto:newbuildsresearch@landregistry.gov.uk?Subject=Feedback: Housing developments beta - development list (MVP1-11-PB)">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+      	Housing Developments
+      </h1>
+		</div>
+	</div>
+
+	<div class="govuk-grid-row">
+
+		<div class="govuk-grid-column-two-thirds">
+			<p class="govuk-body-x">Current housing and developments in England and Wales.</p>
+
+		</div>
+
+<!-- 		<div class="govuk-grid-column-one-half">
+      <form action="estate" method="get" class="form">
+        <div class="govuk-form-group">
+          <label class="govuk-heading-m" for="search">Find a development</label>
+          <input class="govuk-input govuk-!-width-three-quarters" id="search" type="text" name="search">
+          <input type="submit" class="govuk-button" value="Search">
+        </div>
+      </form>
+		</div> -->
+
+		<div class="govuk-grid-column-one-half">
+<!-- 			<div class="govuk-form-group">
+	  		<label class="govuk-label" for="filter-developer">Filter by developer</label>
+			  <select class="govuk-input" id="filter-developer" name="filter-developer">
+			    <option>select developer</option>
+			    <option>Bellway Homes</option>
+			    <option>Bovis Homes</option>
+			    <option>Cavendish</option>
+			    <option>Festival Housing</option>
+			    <option>Sandersons Homes</option>
+			    <option>Taylor Wimpey</option>
+			  </select>
+			</div> -->
+
+<!-- 			<div class="govuk-form-group">
+	  		<label class="govuk-label" for="filter-county">Filter by county</label>
+			  <select class="govuk-input" id="filter-county" name="filter-county">
+			    <option>select county</option>
+			    <option>Bedfordshire</option>
+			    <option>Berkshire</option>
+			    <option>City of Bristol</option>
+			    <option>Buckinghamshire</option>
+			    <option>Cheshire</option>
+			    <option>Cornwall</option>
+			    <option>Cumbria</option>
+			    <option>Derbyshire</option>
+			    <option>Devon</option>
+			    <option>Dorset</option>
+			  </select>
+			</div> -->
+
+		</div>
+	</div>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+
+			<div class="estate-list">
+				<h2 class="govuk-visually-hidden">Estate list</h2>
+				<ul>
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Sherford, Peacock, Peterborough, PE18</a></h3>					
+							<div class="developer">
+								<p>Taylor Wimpey</p>
+							</div>
+							<div class="date">
+								<p>10 August 2018</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Westway Estate, Phase 2, North Plymouth,PL1 2HB</a></h3>
+							<div class="developer">
+								<p>Sanderson Homes</p>
+							</div>
+							<div class="date">
+								<p>18 July 2018</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Gwel An Hay, Hay Common, Launceston, Cornwall</a></h3>
+							<div class="developer">
+								<p>Barratt Homes</p>
+							</div>
+							<div class="date">
+								<p>07 July 2018</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Coombe Park, Sheffield</a></h3>
+							<div class="developer">
+								<p>Persimmon</p>
+							</div>
+							<div class="date">
+								<p>28 June 2018</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Williams Gate, Chester</a></h3>
+							<div class="developer">
+								<p>Bovis Homes</p>
+							</div>
+							<div class="date">
+								<p>27 May 2018</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="/11/housing-developments/westway">Franklin Gardens, Brighton</a></h3>
+							<div class="developer">
+								<p>Persimmon</p>
+							</div>
+							<div class="date">
+								<p>16 April 2018</p>
+							</div>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+  
+
+{% endblock %}
