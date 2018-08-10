@@ -2,14 +2,14 @@
 
 This is prototyping the beta proposition. 
 
-Not just stuff for end users.  Also includes stuff for internal, organisational use.
+Not just stuff for end users.  Also will includes stuff for internal, organisational use.
 
 
 ## Related prototypes
 
 This prototype, and alpha, is based on the work in the previous, wider scoped alpha.
 
-This new prototype will take a more focused view, and will contain work from the 'wider looking' alpha prototype - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
+This new prototype takes a more focused view, and contains work from the 'wider looking' alpha prototype - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
 
 
 ## Users
