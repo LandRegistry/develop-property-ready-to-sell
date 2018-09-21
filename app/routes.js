@@ -238,12 +238,12 @@ router.get('/02/housing-developments/westway/estate-layout', function (req, res)
 // ///// 03 ///////////////////////////////////////////////
 // private beta first release - user story 11 - estate page 
 // ////////////////////////////////////////////////////////
-router.get('/03/housing-developments/westway', function (req, res) {
+router.get('/03/housing-developments/germanybeck', function (req, res) {
     res.render('pb/03/estate')
 })
 
-router.get('/03/housing-developments/westway/estate-layout', function (req, res) {
-    res.sendFile(path.resolve('public/images/westway.pdf'))
+router.get('/03/housing-developments/germanybeck/estate-layout', function (req, res) {
+    res.sendFile(path.resolve('public/images/gb-estate-layout-rev-a.pdf'))
 })
 
 
