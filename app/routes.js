@@ -206,10 +206,10 @@ router.get('/check-my-plans/update-check/v10/03b-setup-information', function (r
 })
 
 
-// /////////////////////////////////
-// Private Beta - MVP1 - estate page and pdf
-// 01
-// /////////////////////////////////
+// ////// 01 //////////////////
+// pre puplic beta - likely MVP
+// estate page and pdf
+// ////////////////////////////
 router.get('/housing-developments/westway', function (req, res) {
     res.render('pb/01/estate')
 })
@@ -219,9 +219,10 @@ router.get('/housing-developments/westway/estate-layout', function (req, res) {
 })
 
 
-// ///// V11 ////////////
-// 02 - with a list 
-// //////////////////////
+// ///// 02 //////////////////
+// pre puplic beta - likely MVP
+// estates list
+// ////////////////////////////
 router.get('/02/housing-developments/westway', function (req, res) {
     res.render('pb/02/estate')
 })
@@ -231,6 +232,17 @@ router.get('/02/housing-developments', function (req, res) {
 })
 
 router.get('/02/housing-developments/westway/estate-layout', function (req, res) {
+    res.sendFile(path.resolve('public/images/westway.pdf'))
+})
+
+// ///// 03 ///////////////////////////////////////////////
+// private beta first release - user story 11 - estate page 
+// ////////////////////////////////////////////////////////
+router.get('/03/housing-developments/westway', function (req, res) {
+    res.render('pb/03/estate')
+})
+
+router.get('/03/housing-developments/westway/estate-layout', function (req, res) {
     res.sendFile(path.resolve('public/images/westway.pdf'))
 })
 
