@@ -1,4 +1,4 @@
-# I want to develop land or property - Alpha for 'sharing estate plans'
+# I want to develop land or property - Private Beta for 'viewing housing development plans'
 
 This is prototyping the beta proposition. 
 
@@ -7,9 +7,9 @@ Not just stuff for end users.  Also will includes stuff for internal, organisati
 
 ## Related prototypes
 
-This prototype, and alpha, is based on the work in the previous, wider scoped alpha.
+This prototype, shows private beta designs for research, and build.
 
-This new prototype takes a more focused view, and contains work from the 'wider looking' alpha prototype - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
+This prototype also includes work from rthe second Alpha, and contains work from the 'wider looking' alpha prototype - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
 
 
 ## Users
