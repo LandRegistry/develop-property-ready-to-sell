@@ -398,9 +398,19 @@ img.map {
     text-align: left;
 }
 
-//////////////////////
-// pb 03 - footer hack
-//////////////////////
+////////////////////////////////////////////
+// pb 03 - footer hack - remove OGL License
+////////////////////////////////////////////
+
+.govuk-footer__licence-logo
+{
+  display:none;
+}
+
+.govuk-footer__licence-description {
+  display:none;
+}
+
 .govuk-footer__inline-list {
     margin-bottom: -5px;
 }
