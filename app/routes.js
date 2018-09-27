@@ -239,7 +239,7 @@ router.get('/02/housing-developments/westway/estate-layout', function (req, res)
 // private beta first release - user story 11 - estate page 
 // ////////////////////////////////////////////////////////
 router.get('/03/housing-developments/germanybeck', function (req, res) {
-    res.render('pb/03/estate')
+    res.render('pb/03/estate-mvp')
 })
 
 router.get('/03/housing-developments/germanybeck/estate-layout', function (req, res) {
