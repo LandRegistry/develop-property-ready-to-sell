@@ -242,7 +242,7 @@ router.get('/03/housing-developments/germanybeck', function (req, res) {
     res.render('pb/03/estate-mvp')
 })
 
-router.get('/03/housing-developments/germanybeck/estate-layout', function (req, res) {
+router.get('/germanybeck/estate-layout', function (req, res) {
     res.sendFile(path.resolve('public/images/gb-estate-layout-rev-a.pdf'))
 })
 
