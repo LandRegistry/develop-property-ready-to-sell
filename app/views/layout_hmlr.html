@@ -23,22 +23,15 @@
 {% from "warning-text/macro.njk"  import govukWarningText %}
 
 {% block head %}
-  {% include "includes/head.html" %}
+  {% include "includes/head_hmlr.html" %}
 {% endblock %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+
 {% endblock %}
 
 {% block header %}
-  {% include "includes/cookie-banner.html" %}
-  {# Set serviceName in config.js. #}
-  {{ govukHeader({
-    homepageUrl: "/",
-    serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-width-container"
-  }) }}
+  {% include "includes/header_hmlr.html" %}
 {% endblock %}
 
 {% if useAutoStoreData %}

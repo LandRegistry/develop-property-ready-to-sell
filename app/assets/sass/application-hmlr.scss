@@ -1,0 +1,19 @@
+// remove GOV.UK brand
+
+
+// Override the govuk-frontend font stack
+* {
+font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif !important;
+}
+
+.govuk-tag {
+	background-color: #0b0c0c;
+}
+
+.govuk-header__container {
+	border-color: white; 
+}
+
+.govuk-footer__copyright-logo {
+	background-image:none; 
+}
