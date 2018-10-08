@@ -1,7 +1,7 @@
-{% extends "layout.html" %}
+{% extends "layout_hmlr.html" %}
 
 {% block page_title %}
-  Westway Estate Phase 2
+  Housing Developments in England and Wales
 {% endblock %}
 
 {% block service_name %}
@@ -9,16 +9,29 @@
 {% endblock %}
 
 {% block beforeContent %}
-<div class="govuk-phase-banner">
-  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
-  beta
-</strong>
+<div class="govuk-phase-bannerx">
+<!--   <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">beta</strong>
     <span class="govuk-phase-banner__text">
       This is a new service – your
-      <a class="govuk-link" href="mailto:newbuildsresearch@landregistry.gov.uk?Subject=Feedback: Housing developments beta - development list (MVP1-11-PB)">feedback</a> will help us to improve it.
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
     </span>
-  </p>
+  </p> -->
+<!--   <p class="govuk-phase-banner__content">
+    <span class="govuk-phase-banner__text">
+      This is a trial service
+    </span>
+  </p> -->
+<!-- <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">beta</strong>
+  </p> -->
 </div>
+<!-- <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="estate-list">Housing Developments</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Germany Beck</li>
+  </ol>
+</div> -->
 {% endblock %}
 
 {% block content %}
@@ -91,7 +104,7 @@
 				<ul>
 					<li class="estate-row">
 						<div>
-							<h3 class="govuk-heading-m"><a href="estate">Sherford, Peacock, Peterborough, PE18</a></h3>					
+							<h3 class="govuk-heading-m"><a href="estate-nav">Sherford, Peacock, Peterborough, PE18</a></h3>					
 							<div class="developer">
 								<p>Taylor Wimpey</p>
 							</div>
@@ -103,7 +116,7 @@
 
 					<li class="estate-row">
 						<div>
-							<h3 class="govuk-heading-m"><a href="estate">Germany Beck, Off Main Street, Fulford, North Yorkshire, YO19 4QG</a></h3>
+							<h3 class="govuk-heading-m"><a href="estate-nav">Germany Beck, Off Main Street, Fulford, North Yorkshire, YO19 4QG</a></h3>
 							<div class="developer">
 								<p>Persimmon Homes</p>
 							</div>
@@ -115,7 +128,7 @@
 
 					<li class="estate-row">
 						<div>
-							<h3 class="govuk-heading-m"><a href="estate">Gwel An Hay, Hay Common, Launceston, Cornwall</a></h3>
+							<h3 class="govuk-heading-m"><a href="estate-nav">Gwel An Hay, Hay Common, Launceston, Cornwall</a></h3>
 							<div class="developer">
 								<p>Barratt Homes</p>
 							</div>
@@ -127,7 +140,7 @@
 
 					<li class="estate-row">
 						<div>
-							<h3 class="govuk-heading-m"><a href="estate">Coombe Park, Sheffield</a></h3>
+							<h3 class="govuk-heading-m"><a href="estate-nav">Coombe Park, Sheffield</a></h3>
 							<div class="developer">
 								<p>Persimmon</p>
 							</div>
@@ -139,7 +152,7 @@
 
 					<li class="estate-row">
 						<div>
-							<h3 class="govuk-heading-m"><a href="estate">Williams Gate, Cardiff</a></h3>
+							<h3 class="govuk-heading-m"><a href="estate-nav">Williams Gate, Cardiff</a></h3>
 							<div class="developer">
 								<p>Bovis Homes</p>
 							</div>
@@ -151,7 +164,7 @@
 
 					<li class="estate-row">
 						<div>
-							<h3 class="govuk-heading-m"><a href="estate">Franklin Gardens, Brighton</a></h3>
+							<h3 class="govuk-heading-m"><a href="estate-nav">Franklin Gardens, Brighton</a></h3>
 							<div class="developer">
 								<p>Persimmon</p>
 							</div>
@@ -180,7 +193,7 @@
         },
         {
           href: "https://www.gov.uk/help/terms-conditions",
-          text: "Terms of use"
+          text: "Terms and conditions"
         }
       ]
     }

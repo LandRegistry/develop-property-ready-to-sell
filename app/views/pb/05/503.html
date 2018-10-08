@@ -1,0 +1,50 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  
+{% endblock %}
+
+{% block service_name %}
+  view housing development - service unavailable
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+<!-- this is where we put our stuff -->
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sorry, this service is unavailable</h1>
+        <p class="govuk-body">
+          You will be able to use this service later.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- this is the end of where we put our stuff -->
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+        	href: "https://www.gov.uk/help/cookies",
+          text: "Cookies"
+        },
+        {
+          href: "https://www.gov.uk/help/terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
