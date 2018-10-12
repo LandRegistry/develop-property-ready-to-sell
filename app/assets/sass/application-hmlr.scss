@@ -22,3 +22,30 @@ font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif
 .govuk-template {
     background: #f1f2f3; 
 }
+
+
+// satisfaction survey
+.satisfaction-survey {
+	border-top-color: rgb(213, 213, 213);
+	border-top-style: solid;
+	border-top-width: 1px;	
+}
+
+
+
+
+// banner - beta
+
+/* .govuk-header__container {
+	border-color: #0b0c0c;
+} */
+
+.debrand-banner {
+	background-color: #0b0c0c; 
+	margin-top: -15px;
+}
+
+.debrand-banner .govuk-phase-banner__content, .debrand-banner .govuk-phase-banner__content .govuk-link {
+	color: white;
+}
+
