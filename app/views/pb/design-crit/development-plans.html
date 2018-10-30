@@ -9,17 +9,26 @@
 {% endblock %}
 
 {% block beforeContent %}
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-   <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="estate-list">Housing Developments</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="estate">Germany Beck</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item" aria-current="page">Development plans</li>
-  </ol>
-</div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+			<div class="govuk-breadcrumbs">
+			  <ol class="govuk-breadcrumbs__list">
+			   <li class="govuk-breadcrumbs__list-item">
+			      <a class="govuk-breadcrumbs__link" href="estate-list">Housing Developments</a>
+			    </li>
+			    <li class="govuk-breadcrumbs__list-item">
+			      <a class="govuk-breadcrumbs__link" href="estate">Germany Beck</a>
+			    </li>
+			    <li class="govuk-breadcrumbs__list-item" aria-current="page">Development plans</li>
+			  </ol>
+			</div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      {% include '../../includes/language_switcher.html' %}
+    </div>
+  </div>
 
 <!--   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
