@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Germany Beck - Housing Development
+{% endblock %}
+
+{% block service_name %}
+  
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+  beta
+</strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your
+      <a class="govuk-link" href="mailto:newbuildsresearch@landregistry.gov.uk?Subject=Feedback: Housing developments beta - Estate page (MVP1-11-PB)">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk/browse/housing-local-services">Housing and local services</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Housing</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl spacing-bottom-flushx">
+        Housing
+      </h1>
+		</div>
+	</div>
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<p class="govuk-body-lead">No idea what this page might say yet, but....</p>
+			<p class="govuk-body">
+				<ul class="govuk-list govuk-list--bullet">
+						<li>what gov knows about houses and properties</li>
+						<li>information that helps people navigate around housing - e.g. the different types - like: proposed, new, old, listed, etc - whatever they need.</li>
+						<li>jumping off point for services around housing / housing services, properties/property services</li>
+				</ul>
+			</p>
+
+		</div>
+
+		<div class="govuk-grid-column-one-third">
+
+		</div>
+		<!-- estate map -->
+	</div>
+	<!-- end first row -->
+
+
+  
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+        	href: "https://www.gov.uk/help/cookies",
+          text: "Cookies"
+        },
+        {
+          href: "https://www.gov.uk/help/terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
