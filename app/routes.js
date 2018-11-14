@@ -247,4 +247,17 @@ router.get('/germanybeck/estate-layout', function (req, res) {
 })
 
 
+// ///// 08 ///////////////////////////////////////////////
+// private beta first release - 2 plans one estate
+// ////////////////////////////////////////////////////////
+
+router.get('/northallerton/estate-layout-ep1', function (req, res) {
+    res.sendFile(path.resolve('public/images/northallerton-ep1.pdf'))
+})
+
+router.get('/northallerton/estate-layout-ep2', function (req, res) {
+    res.sendFile(path.resolve('public/images/northallerton-ep2.pdf'))
+})
+
+
 module.exports = router
