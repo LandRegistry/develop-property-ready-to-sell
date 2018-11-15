@@ -236,7 +236,7 @@ router.get('/02/housing-developments/westway/estate-layout', function (req, res)
 })
 
 // ///// 03 ///////////////////////////////////////////////
-// private beta first release - user story 11 - estate page 
+// private beta first release - user story 11 - estate page
 // ////////////////////////////////////////////////////////
 router.get('/03/housing-developments/germanybeck', function (req, res) {
     res.render('pb/03/estate-mvp')
@@ -252,11 +252,11 @@ router.get('/germanybeck/estate-layout', function (req, res) {
 // ////////////////////////////////////////////////////////
 
 router.get('/thurstan-park/estate-layout-ep1', function (req, res) {
-    res.sendFile(path.resolve('public/images/thurstan-park-ep1.pdf'))
+    res.sendFile(path.resolve('public/images/v0.2_thurstan_park_northallerton-ep1.pdf'))
 })
 
 router.get('/thurstan-park/estate-layout-ep2', function (req, res) {
-    res.sendFile(path.resolve('public/images/thurstan-park-ep2.pdf'))
+    res.sendFile(path.resolve('public/images/v0.5_taylor_wimpey_north_all_ep2_plan_2.10.18.pdf'))
 })
 
 
