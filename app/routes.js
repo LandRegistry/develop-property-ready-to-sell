@@ -247,9 +247,12 @@ router.get('/germanybeck/estate-layout', function (req, res) {
 })
 
 
-// ///// 08 ///////////////////////////////////////////////
-// private beta first release - 2 plans one estate
 // ////////////////////////////////////////////////////////
+// ///// version 08 ///////////////////////////////////////
+// ////////////////////////////////////////////////////////
+
+
+// ///////// 2 plans one estate /////////////////////
 
 router.get('/thurstan-park/estate-layout-ep1', function (req, res) {
     res.sendFile(path.resolve('public/images/v0.2_thurstan_park_northallerton-ep1.pdf'))
@@ -259,5 +262,13 @@ router.get('/thurstan-park/estate-layout-ep2', function (req, res) {
     res.sendFile(path.resolve('public/images/v0.5_taylor_wimpey_north_all_ep2_plan_2.10.18.pdf'))
 })
 
+// //////// email notifications /////////////////
+
+router.get('/thurstan-park/plan-changed-noification', function (req, res) {
+    res.sendFile(path.resolve('public/images/Thurstan-Park-plot-changes-large-development.pdf'))
+})
+
+// ////////////////////////////////////////////////////////
+// ////////////////////////////////////////////////////////
 
 module.exports = router
