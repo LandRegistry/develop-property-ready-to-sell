@@ -1,0 +1,70 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  
+{% endblock %}
+
+{% block service_name %}
+  Terms and conditions - view housing development
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" onclick="goBack()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <!-- <h1 class="govuk-heading-l">Contact method </h1> -->
+
+      <form class="form" action="/thurstan-park/plan-changed-noification" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-6">
+                Email address
+              </h1>
+            </legend>
+            
+            <div class="govuk-form-group">
+              <label class="govuk-label" for="email">
+                Email address
+              </label>
+              <span id="email-hint" class="govuk-hint">
+                We’ll only use this to tell you the plan has changed
+              </span>
+              <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
+            </div>
+
+          </fieldset>
+        </div>
+
+        <button class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
