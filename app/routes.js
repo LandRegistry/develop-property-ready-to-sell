@@ -283,6 +283,11 @@ router.get('/thurstan-park/estate-layout', function (req, res) {
     res.sendFile(path.resolve('public/images/hmlr-thurstan-park.pdf'))
 })
 
+router.get('/thurstan-park/plan-published-noification', function (req, res) {
+    res.sendFile(path.resolve('public/images/Thurstan-Park-plan-approved-large-development.pdf'))
+})
+
+
 // ////////////////////////////////////////////////////////
 // ////////////////////////////////////////////////////////
 
