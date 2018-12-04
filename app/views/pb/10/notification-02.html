@@ -1,7 +1,7 @@
 {% extends "layout_hmlr.html" %}
 
 {% block page_title %}
-  
+
 {% endblock %}
 
 {% block service_name %}
@@ -23,15 +23,50 @@
       <!-- <form class="form" action="/thurstan-park/plan-changed-noification" method="post"> -->
       <form class="form" action="/thurstan-park/plan-published-noification" method="post">
 
+        <div class="govuk-width-container">
+          <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+            <div class="govuk-grid-row">
+              <div class="govuk-grid-column-two-thirds">
+                <div class="govuk-panel govuk-panel--confirmation">
+                  <h1 class="govuk-panel__title">
+                    Email sign-up complete
+                  <!-- </h1>
+                  <div class="govuk-panel__body">
+                    Your reference number
+                    <br><strong>HDJ2123F</strong>
+                  </div> -->
+                </div>
 
-        <div class="govuk-form-group">
+                <!-- <p class="govuk-body">We have sent you a confirmation email.</p> -->
+            <div class="spacing-top-double">
+
+                <h3 class="govuk-heading-m">What happens next</h3>
+            </div>
+                <p class="govuk-body">
+                  We’ve sent you a confirmation email.
+                </p>
+                <p class="govuk-body">
+                  You can unsubscribe from this notification service at any time.</p>
+
+                  <p>See an example <a href="notification-03">confirmation email<span class="govuk-visually-hidden"> </span></a>.
+            			</p>
+
+
+                <p class="govuk-body">
+                  <!-- <a href="#" class="govuk-link">What did you think of this service?</a> (takes 30 seconds) -->
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
+        <!-- <div class="govuk-form-group">
           <fieldset class="govuk-fieldset">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
               <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-6">
                 Email address
               </h1>
             </legend>
-            
+
             <div class="govuk-form-group">
               <label class="govuk-label" for="email">
                 Email address
@@ -49,7 +84,7 @@
 
       </form>
 
-    </div>
+    </div> -->
   </div>
 
 {% endblock %}
