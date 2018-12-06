@@ -32,8 +32,6 @@ font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif
 }
 
 
-
-
 // banner - beta
 
 /* .govuk-header__container {
@@ -48,4 +46,13 @@ font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif
 .debrand-banner .govuk-phase-banner__content, .debrand-banner .govuk-phase-banner__content .govuk-link {
 	color: white;
 }
+
+
+// plot table
+
+
+.hmlr-table__header__nowrap {
+	white-space: nowrap;
+}
+
 
