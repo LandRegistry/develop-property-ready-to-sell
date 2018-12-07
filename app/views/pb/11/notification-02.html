@@ -36,19 +36,26 @@
 
       <p class="govuk-body">We’ve sent you a confirmation email.
       </p>
+
+      <p><a href="estate">Return to Thurstan Park</a> housing development information.</p>
+
+      <br>
       <p class="govuk-body">
       You can <a href="notification-unsubscribe">unsubscribe</a> from this notification service at any time.
       </p>
 
-      <p>See an example <a href="notification-03">confirmation email<span class="govuk-visually-hidden"> </span></a>.
-			</p>
+
+
+
     </div>
   </div>
 
 {% endblock %}
 
 {% block footer %}
+
   {{ govukFooter({
+
     meta: {
       items: [
         {
@@ -58,8 +65,14 @@
         {
           href: "terms-conditions",
           text: "Terms and conditions"
+        },
+        {
+          href: "notification-flows",
+          text: "Notification examples"
         }
       ]
     }
   }) }}
 {% endblock %}
+
+
