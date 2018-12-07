@@ -1,0 +1,87 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  
+{% endblock %}
+
+{% block service_name %}
+  Cookies - view housing development
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Notification examples
+      </h1>
+
+      <p>Examples of the situations which we will contact the subscriber and what we would say and they can do.</p>
+
+      <p>Collecting only the information needed to operate this service feature - to notify that a plan has changed.</p>
+
+      <p>As all published information is public and it can be checked at any time by anyone, there is no restricition on who can sign up to be notified, and no requirement to provide any information other than a contact - in this case an email address</p>
+
+      <p class="govuk-lead">As an email address can identify a person this will be securely held and access limited to just this service feature.  It won't be joined with any other data captured as part of this service - for example analytic data.  The information will be held and used as per current GOV.UK best practice - compliance with GDPR, other relevant UK legislation.</p>
+
+
+      <h2 class="govuk-heading-m">
+        Example emails
+      </h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a class="govuk-link" href="notification-signed-up">Confirming signing up to a housing development</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="notification-plan-changed">Notification of change to a development plan</a>
+        </li>
+        <br>
+        <li>Unsubscribing: 
+          <br>
+          <a class="govuk-link" href="notification-unsubscribe">User clicking on unsubscribe in an email</a>
+          <br>
+          <a class="govuk-link" href="notification-unsubscribed-email">Confirmation of unsubscribing</a>
+        </li>
+        <br>
+        <li>Deleting personal information after inactivity: 
+          <br>
+          <a class="govuk-link" href="notification-deleted-estate-inactive">Notification of automatic deletion after estate 'closed'</a>
+          <br>
+          Notification of automatic deletion after estate inactivity - e.g. 9 months - very similar to estate closed
+        </li>
+      </ul>
+ 
+      <br><br>
+      <hr>
+      <p class="govuk-lead">
+        <a href="estate">&lt; Return to the Housing development page</a>
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
