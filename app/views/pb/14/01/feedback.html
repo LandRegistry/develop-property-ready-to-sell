@@ -1,0 +1,110 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  
+{% endblock %}
+
+{% block service_name %}
+  Cookies - view housing development
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" onclick="goBack()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Thank you
+      </h1>
+
+      <div class="satisfaction-survey">
+        <h2 class="govuk-heading-m govuk-!-margin-top-4">Satisfaction survey</h2>
+
+        <form class="contact-form" action="thank-you" method="post" id="completed-transaction-form">
+          <input type="hidden" id="service_slug" name="service_feedback[slug]" value="view-housing-development">
+          <input type="hidden" id="service_done_page_url" name="service_feedback[url]" value="estate-page">
+
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend">
+              <h2 class="govuk-heading-m govuk-!-margin-top-4">
+                Overall, how did you feel about the service you received today?
+              </h2>
+            </legend>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" type="radio" required name="service_feedback[service_satisfaction_rating]" id="very-satisfied" value="5">
+                <label class="govuk-label govuk-radios__label" for="very-satisfied">Very satisfied</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" type="radio" required name="service_feedback[service_satisfaction_rating]" id="satisfied" value="4">
+                <label class="govuk-label govuk-radios__label" for="satisfied">
+                 Satisfied</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" type="radio" required name="service_feedback[service_satisfaction_rating]" id="neither" value="3">
+                <label class="govuk-label govuk-radios__label" for="neither">Neither satisfied or dissatisfied</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" type="radio" required name="service_feedback[service_satisfaction_rating]" id="dissatisfied" value="2">
+                <label class="govuk-label govuk-radios__label" for="dissatisfied">Dissatisfied</label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" type="radio" required name="service_feedback[service_satisfaction_rating]" id="very-dissatisfied" value="1">
+                <label class="govuk-label govuk-radios__label" for="very-dissatisfied">Very dissatisfied</label>
+              </div>
+            </div>
+          </fieldset>
+
+
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend">
+              <h2 class="govuk-heading-m govuk-!-margin-top-8 govuk-!-margin-bottom-2">
+                How could we improve this service?
+              </h2>
+            </legend>
+
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-visually-hidden" for="improvement-comments">
+                Your comments
+              </label>
+              <span id="more-detail-hint" class="govuk-hint">
+                Don’t include personal or financial information, eg your National Insurance number or credit card details.
+              </span>
+              <textarea name="service_feedback[improvement_comments]" class="govuk-textarea govuk-!-margin-bottom-2" id="improvement-comments" name="improvement-comments" rows="5" aria-describedby="more-detail-hint"></textarea>
+              <p class="govuk-hint" aria-live="polite" aria-atomic="false">(Limit is 1200 characters)</p>
+            </div>
+
+          </fieldset>
+
+          <fieldset class="govuk-fieldset govuk-!-margin-top-6">
+            <button type="submit" class="govuk-button">Send feedback</button>
+          </fieldset>
+
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

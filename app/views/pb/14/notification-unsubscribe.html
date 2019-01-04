@@ -1,0 +1,71 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+
+{% endblock %}
+
+{% block service_name %}
+  Terms and conditions - view housing development
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <!-- <h1 class="govuk-heading-l">Contact method </h1> -->
+
+
+
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+            Email notifications cancelled
+        </h1>
+          <!-- <div class="govuk-panel__body">
+            Your reference number
+            <br><strong>HDJ2123F</strong>
+          </div> -->
+      </div>
+
+      <h3 class="govuk-heading-m spacing-top-double">What happens next</h3>
+
+      <p class="govuk-body">You will receive a final email to confirm you have unsubscribed from future notifications about the Thurstan Park housing development.
+      </p>
+      <p class="govuk-body">
+
+      </p>
+
+      <p>You can sign up again for notifications at any time.<span class="govuk-visually-hidden"> </span></a>
+			</p>
+
+      <p><a href="estate">Return to Thurstan Park</a> housing development information.</p>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        },
+        {
+          href: "notification-flows",
+          text: "Notification examples"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
