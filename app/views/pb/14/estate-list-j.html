@@ -1,0 +1,94 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  Housing Developments in England and Wales
+{% endblock %}
+
+{% block service_name %}
+
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-bannerx">
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+      	View housing development
+      </h1>
+		</div>
+	</div>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-body">You can view information and plans for new-build housing developments with more than 10 properties, in England and Wales.</p>
+      <p class="govuk-body govuk-!-margin-bottom-8">You can sign up to be notifed when a development plan changes.</p>
+		</div>
+	</div>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<div class="estate-list-2">
+				<h2 class="govuk-visually-hidden">Estate list</h2>
+			  <h3 class="govuk-heading-m">Housing developments</h3>
+
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link" href="estate">Bakersfield, Cale Lane, Wigan, Lancashire, WN2 1HD</a>
+            <p>Taylor Wimpey</p>
+          </li>
+
+        <hr class="govuk-section-break govuk-section-break--visible">
+
+          <li>
+            <a class="govuk-link" href="estate">Clarendon Woods, Hyde, Manchester, SK14 2LJ</a>
+            <p>Taylor Wimpey</p>
+          </li>
+        <hr class="govuk-section-break govuk-section-break--visible">
+
+          <li>
+            <a class="govuk-link" href="estate">Harlow Green, Crag Lane, Beckwithshaw, Harrogate, HG3 1QA</a>
+            <p>Taylor Wimpey</p>
+          </li>
+        <hr class="govuk-section-break govuk-section-break--visible">
+
+          <li>
+            <a class="govuk-link" href="estate">Thurstan Park, Northallerton Road, Northallerton, North Yorkshire, DL6 2PY</a>
+            <p>Taylor Wimpey</p>
+          </li>
+        <hr class="govuk-section-break govuk-section-break--visible">
+</ul>
+
+
+			</div>
+		</div>
+	</div>
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+        	href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
