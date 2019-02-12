@@ -288,6 +288,11 @@ router.get('/thurstan-park/plan-published-noification', function (req, res) {
 })
 
 
+router.get('/harlow-hill-grange/estate-layout', function (req, res) {
+    res.sendFile(path.resolve('public/images/harlow-hill-grange-v1.pdf'))
+})
+
+
 // ////////////////////////////////////////////////////////
 // ////////////////////////////////////////////////////////
 
