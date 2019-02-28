@@ -292,6 +292,12 @@ router.get('/harlow-hill-grange/estate-layout', function (req, res) {
     res.sendFile(path.resolve('public/images/harlow-hill-grange-v1.pdf'))
 })
 
+// ///// version 15//////
+
+
+router.get('/thurstan-park/estate-layout-plot-08', function (req, res) {
+    res.sendFile(path.resolve('public/images/TP-plan---border-on-plot-8---no-stamp.jpg'))
+})
 
 // ////////////////////////////////////////////////////////
 // ////////////////////////////////////////////////////////
