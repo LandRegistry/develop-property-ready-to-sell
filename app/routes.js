@@ -299,6 +299,10 @@ router.get('/thurstan-park/estate-layout-plot-08', function (req, res) {
     res.sendFile(path.resolve('public/images/TP-plan---border-on-plot-8---no-stamp.jpg'))
 })
 
+router.get('/thurstan-park-no-stamp', function (req, res) {
+    res.sendFile(path.resolve('public/images/thurstan-park-no-stamp.jpg'))
+})
+
 // ////////////////////////////////////////////////////////
 // ////////////////////////////////////////////////////////
 
