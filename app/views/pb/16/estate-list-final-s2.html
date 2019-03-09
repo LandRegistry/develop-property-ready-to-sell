@@ -1,0 +1,122 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  Housing Developments in England and Wales
+{% endblock %}
+
+{% block service_name %}
+
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-banner" style="margin-top:-10px;">
+  <p class="govuk-phase-banner__content">
+  <strong class="govuk-tag govuk-phase-banner__content__tag " style="background-color:#005ea5;padding: 4px 8px;">
+  beta
+  </strong>
+
+  <span class="govuk-phase-banner__text">
+      This is a new service
+    </span>
+  </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+      	Housing developments
+      </h1>
+
+      <p class="govuk-body">You can view information and plans for new-build housing developments with more than 10 properties, in England and Wales.</p>
+      <!-- <p class="govuk-body govuk-!-margin-bottom-8">Sign up to be notified if a development plan changes.</p> -->
+      <p class="govuk-body">This is a trial service. Not all housing developments are published.</p>
+
+
+
+      <div class="estate-list-2">
+        <h2 class="govuk-visually-hidden">Housing developments listed in alphabetical order</h2>
+
+
+        <ul class="govuk-list">
+          <li>
+            <a class="govuk-link govuk-!-font-weight-bold" href="">Bakersfield, Cale Lane, Wigan, Lancashire, WN2 1HD</a>
+            <p class="govuk-body">Taylor Wimpey</p>
+          </li>
+
+        <!-- <hr class="govuk-section-break govuk-section-break--visible"> -->
+
+          <li>
+            <a class="govuk-link govuk-!-font-weight-bold" href="">Clarendon Woods, Hyde, Manchester, SK14 2LJ</a>
+            <p class="govuk-body">Taylor Wimpey</p>
+          </li>
+        <!-- <hr class="govuk-section-break govuk-section-break--visible"> -->
+
+          <li>
+            <a class="govuk-link govuk-!-font-weight-bold" href="">Harlow Green, Crag Lane, Beckwithshaw, Harrogate, HG3 1QA</a>
+            <p class="govuk-body">Taylor Wimpey</p>
+          </li>
+        <!-- <hr class="govuk-section-break govuk-section-break--visible"> -->
+
+          <li>
+            <a class="govuk-link govuk-!-font-weight-bold" href="">Harlow Hill Grange, Otley Road, Beckwithshaw, Harrogate, HG3 1QL</a>
+            <p class="govuk-body">Charles Church</p>
+          </li>     
+
+          <li>
+            <a class="govuk-link govuk-!-font-weight-bold" href="estate-s2">Thurstan Park, Northallerton Road, Northallerton, North Yorkshire, DL6 2PY</a>
+            <p class="govuk-body">Taylor Wimpey</p>
+          </li>
+        <!-- <hr class="govuk-section-break govuk-section-break--visible"> -->
+        </ul>
+      </div>
+
+		</div>
+    
+    <div class="govuk-grid-column-one-third">
+
+      <!-- The Related items component is not part of GOV.UK Frontend but will be styled if used in the Prototype Kit -->
+
+      <aside class="app-related-items" role="complementary" style="border-top-width:2px;">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+
+            <li>
+              <a class="govuk-link" href="https://www.gov.uk/government/collections/developing-estates-practice-guides">Developing estates: practice guides</a>
+
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+	</div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+        	href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
