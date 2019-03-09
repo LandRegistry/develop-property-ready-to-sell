@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a class="govuk-back-link" href="#" onclick="goBack()">Back</a>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      {% include '../../../includes/language_switcher.html' %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="/check-my-plans/update-check/v10/10-check-answers" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Conveyancer name and address
+        </h1>
+
+        <p>We will publish the name and address of the conveyancer acting for the developer for this development</p>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="conv-name">Conveyancer name</label>
+          <input class="govuk-input" id="conv-name" type="text" name="conv-name" value="{{ data['conv-name'] }}">
+        </div>
+
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="conv-address">
+            Conveyancer address
+          </label>
+          <textarea class="govuk-textarea govuk-!-width-two-thirds" name="conv-address" id="conv-address" rows="5"></textarea>
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="govuk-button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+<script>
+  var address = "{{ data['conv-address-1'] }}\n{{ data['conv-address-2'] }}\n{{ data['conv-address-3'] }}";
+  document.getElementById("conv-address").value = address;
+</script>
+
+
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a class="govuk-back-link" href="#" onclick="goBack()">Back</a>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      {% include '../../../../includes/language_switcher.html' %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="10-check-answers" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Your details
+        </h1>
+
+        <p>We need an email address to send you the results of the plans check</p>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="email">Email address</label>
+          <input class="govuk-input" id="email" type="text" name="email">
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="govuk-button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+{% endblock %}
