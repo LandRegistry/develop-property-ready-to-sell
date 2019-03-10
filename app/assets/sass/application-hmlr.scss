@@ -56,3 +56,123 @@ font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif
 }
 
 
+///// 2020 - pagination ////
+
+.pager-simple {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.pager-simple ul {
+  margin: 0;
+  padding: 0;
+}
+
+.pager-simple li {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 1.14286;
+  float: left;
+  list-style: none;
+  text-align: right;
+  width: 49%;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 641px) {
+  .pager-simple li {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.pager-simple .previous-page a,
+.pager-simple .next-page a {
+  display: block;
+  color: #005ea5;
+  text-decoration: none;
+}
+
+.pager-simple .previous-page a:hover, .pager-simple .previous-page a:active,
+.pager-simple .next-page a:hover,
+.pager-simple .next-page a:active {
+  background-color: #f8f8f8;
+}
+
+.pager-simple .previous-page a .pagination-part-title,
+.pager-simple .next-page a .pagination-part-title {
+  font-family: "nta", Arial, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  font-size: 20px;
+  line-height: 1.11111;
+  margin-bottom: 0.1em;
+  display: block;
+}
+
+@media (min-width: 641px) {
+  .pager-simple .previous-page a .pagination-part-title,
+  .pager-simple .next-page a .pagination-part-title {
+    font-size: 27px;
+    line-height: 1.25;
+  }
+}
+
+.pager-simple .previous-page a:before,
+.pager-simple .next-page a:before {
+  margin-top: -4px;
+  display: block;
+  width: 30px;
+  height: 38px;
+  content: " ";
+}
+
+.pager-simple .next-page {
+  float: right;
+  text-align: right;
+}
+
+.pager-simple .next-page a {
+  padding: 0.75em 3em 0.75em 0;
+}
+
+.pager-simple .next-page a:before {
+  background: transparent url("/public/images/arrow-sprite.png") no-repeat -102px -11px;
+  margin-right: -32px;
+  float: right;
+}
+
+.pager-simple .previous-page {
+  float: left;
+  text-align: left;
+}
+
+.pager-simple .previous-page a {
+  padding: 0.75em 0 0.75em 3em;
+}
+
+.pager-simple .previous-page a:before {
+  background: transparent url("/public/images/arrow-sprite.png") no-repeat -20px -11px;
+  margin-left: -32px;
+  float: left;
+}
+
+.pager-simple .limit-message {
+  font-size: inherit;
+  text-align: left;
+}
+
+@media (max-width: 400px) {
+  .pager-simple .limit-message {
+    padding-top: 15px;
+    float: none;
+    width: auto;
+    clear: both;
+    text-align: right;
+  }
+}
+
+
