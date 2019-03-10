@@ -10,7 +10,7 @@
       <a class="govuk-back-link" href="#" onclick="goBack()">Back</a>
     </div>
     <div class="govuk-grid-column-one-third">
-      {% include '../../../includes/language_switcher.html' %}
+      {% include '../../../../includes/language_switcher.html' %}
     </div>
   </div>
 {% endblock %}
@@ -19,37 +19,29 @@
 
 {% block content %}
 
-<style type="text/css">
-
-#deed_uploads {
-  margin-top: 25px;
-}
-
-.preview {
-  margin-top:15px;
-}
-
-</style>
-
-
-
-
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
 
       <h1 class="govuk-heading-xl">
-        Upload precedent deeds
+          Upload PDF development plan
       </h1>
+
+      <h2 class="govuk-heading-m">Current PDF plan files</h2> 
+      <p>{{ data['pdf_uploads'] }}</p>
+
+      <h2 class="govuk-heading-m">Upload new PDF plan files</h2>
+
+      <form id="file-selector" method="get" enctype="multipart/form-data" action="10-check-answers">      
       <!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file -->
 
-      <form id="file-selector" method="get" enctype="multipart/form-data" action="06-contact-email">
         <div>
-          <label class="govuk-label" for="deed_uploads">Choose files</label>
-          <input type="file" id="deed_uploads" name="deed_uploads" multiple>
+          <label class="govuk-label" for="cad_uploads">Choose PDF files</label>
+          <!-- <input type="file" id="cad_uploads" name="cad_uploads" accept=".dxf, .dwg" multiple> -->
+          <input class="govuk-file-upload" type="file" id="cad_uploads" name="cad_uploads" multiple>        
         </div>
         <div class="preview">
-          <p>No deeds currently selected for upload</p>
+          <p>No PDF files currently selected for upload</p>
         </div>
 
         <div class="govuk-form-group">

@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
-{% block page_itle %}
-  Check your answers
+{% block page_title %}
+  CCheck housing development plan
 {% endblock %}
 
 {% block beforeContent %}
@@ -10,11 +10,10 @@
       <a class="govuk-back-link" href="#" onclick="goBack()">Back</a>
     </div>
     <div class="govuk-grid-column-one-third">
-      {% include '../../../includes/language_switcher.html' %}
+      {% include '../../../../includes/language_switcher.html' %}
     </div>
   </div>
 {% endblock %}
-
 
 {% block content %}
 
@@ -24,7 +23,7 @@
       <!-- <a href="#" class="link-back">Back</a> -->
 
       <h1 class="govuk-heading-l">
-        Development plans: {{ data['estate-name'] }}
+        Development plans: {{ data['development-name'] }}
       </h1>
 
 
@@ -46,9 +45,9 @@
 <!--             Westway Estate Phase 2<br />
             North Plymouth <br/>
             PL1 2HB -->
-            {{ data['estate-name'] }} <br />
-            {{ data['estate-address-1'] }} <br />
-            {{ data['estate-address-2'] }}
+            {{ data['development-name'] }} <br />
+            {{ data['development-address-1'] }} <br />
+            {{ data['development-address-2'] }}
           </dd>
           <dd class="app-check-your-answers__change">
             <a href="#">
@@ -58,6 +57,7 @@
         </div>
       </dl>
 
+<br>
 
       <h2 class="govuk-heading-m">
         Plan details
@@ -66,40 +66,57 @@
       <dl class="app-check-your-answers app-check-your-answers--short">
         <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
-            Estate layout files
+            Digital plan files
           </dt>
           <dd class="app-check-your-answers__answer">
             {{ data['cad_uploads'] }}
           </dd>
           <dd class="app-check-your-answers__change">
             <a href="05-upload-cad">
-              Change<span class="govuk-visually-hidden"> digital layout file</span>
+              Change<span class="govuk-visually-hidden"> digital plan file</span>
             </a>
           </dd>
         </div>
 
-<!--         <div class="app-check-your-answers__contents">
+
+        <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
-            Prececdent deeds file
+            PDF plan files
           </dt>
           <dd class="app-check-your-answers__answer">
-            {{ data['deed_uploads'] }}
+            {{ data['pdf_uploads'] }}
+            <!-- {{ data['cad_uploads'] }} -->
           </dd>
           <dd class="app-check-your-answers__change">
-            <a href="06-upload-deeds">
-              Change<span class="govuk-visually-hidden"> precedent deeds</span>
+            <a href="05b-upload-pdf">
+              Change<span class="govuk-visually-hidden"> PDF plan file</span>
             </a>
           </dd>
-        </div> -->
+        </div>
 
       </dl>
 
-
+<br>
       <h2 class="govuk-heading-m">
-        Contact details
+        Your details
       </h2>
 
       <dl class="app-check-your-answers app-check-your-answers--short">
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Developer
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            {{ data['dev-name'] }}
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="07-contact-email">
+              Change<span class="govuk-visually-hidden"> developer</span>
+            </a>
+          </dd>
+        </div>        
+
         <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Contact email
@@ -114,45 +131,11 @@
           </dd>
         </div>
 
-        <div class="app-check-your-answers__contents">
-          <dt class="app-check-your-answers__question">
-            Developer
-          </dt>
-          <dd class="app-check-your-answers__answer">
-            {{ data['dev-name'] }} <br />
-            {{ data['dev-address-1'] }} <br />
-            {{ data['dev-address-2'] }} <br />
-            {{ data['dev-address-3'] }} <br />
-            {{ data['dev-address-4'] }}
-          </dd>
-          <dd class="app-check-your-answers__change">
-            <a href="08-developer">
-              Change<span class="govuk-visually-hidden"> developer</span>
-            </a>
-          </dd>
-        </div>
-
-        <div class="app-check-your-answers__contents">
-          <dt class="app-check-your-answers__question">
-            Conveyancer
-          </dt>
-          <dd class="app-check-your-answers__answer">
-            {{ data['conv-name'] }} <br />
-            {{ data['conv-address-1'] }} <br />
-            {{ data['conv-address-2'] }} <br />
-            {{ data['conv-address-3'] }}
-          </dd>
-          <dd class="app-check-your-answers__change">
-            <a href="09-conveyancer">
-              Change<span class="govuk-visually-hidden"> conveyancer</span>
-            </a>
-          </dd>
-        </div>
-
       </dl>
 
+<br>
 
-      <h2 class="govuk-heading-m">Now submit your development plans</h2>
+      <h2 class="govuk-heading-m">Now submit your revised development plans</h2>
 
       <p class="text">
         By submitting this information you are confirming that, to the best of your knowledge, the details you are providing are correct at this time.

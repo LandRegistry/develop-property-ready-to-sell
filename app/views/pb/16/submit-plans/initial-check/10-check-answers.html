@@ -29,7 +29,7 @@
 
       <!-- only add a heading for a list if there is more than one list -->
       <h2 class="govuk-heading-m">
-        Plan details
+        Development
       </h2>
 
       <!-- use additional modifier class to change column widths for multiple groups of questions and answers: -->
@@ -55,19 +55,37 @@
             </a>
           </dd>
         </div>
+      </dl>
 
+
+      <dl class="app-check-your-answers app-check-your-answers--short">
 
         <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
-            Estate layout files
+            Digital plan files
           </dt>
           <dd class="app-check-your-answers__answer">
-            westway-estate.dxf
+            westway-estate-cad-v1.dxf
             <!-- {{ data['cad_uploads'] }} -->
           </dd>
           <dd class="app-check-your-answers__change">
             <a href="#">
-              Change<span class="govuk-visually-hidden"> digital layout file</span>
+              Change<span class="govuk-visually-hidden"> digital plan file</span>
+            </a>
+          </dd>
+        </div>
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            PDF plan files
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            westway-estate-v1.pdf
+            <!-- {{ data['cad_uploads'] }} -->
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> PDF plan file</span>
             </a>
           </dd>
         </div>
@@ -89,11 +107,37 @@
       </dl>
 
 <br>
+
+
+
+
       <h2 class="govuk-heading-m">
-        Contact details
+        Your details
       </h2>
 
       <dl class="app-check-your-answers app-check-your-answers--short">
+
+        <div class="app-check-your-answers__contents">
+          <dt class="app-check-your-answers__question">
+            Developer
+          </dt>
+          <dd class="app-check-your-answers__answer">
+            Sanderson Homes<br />
+<!--             Alston Towers<br />
+            North Alerton<br />
+            Derby<br />
+            DB1 3NB -->
+            <!-- {{ data['dev-name'] }} -->
+            <!-- {{ data['dev-address'] }} -->
+          </dd>
+          <dd class="app-check-your-answers__change">
+            <a href="#">
+              Change<span class="govuk-visually-hidden"> developer</span>
+            </a>
+          </dd>
+        </div>
+
+
         <div class="app-check-your-answers__contents">
           <dt class="app-check-your-answers__question">
             Contact email
@@ -109,29 +153,10 @@
           </dd>
         </div>
 
-        <div class="app-check-your-answers__contents">
-          <dt class="app-check-your-answers__question">
-            Developer
-          </dt>
-          <dd class="app-check-your-answers__answer">
-            Sanderson Homes<br />
-            Alston Towers<br />
-            North Alerton<br />
-            Derby<br />
-            DB1 3NB
-            <!-- {{ data['dev-name'] }} -->
-            <!-- {{ data['dev-address'] }} -->
-          </dd>
-          <dd class="app-check-your-answers__change">
-            <a href="#">
-              Change<span class="govuk-visually-hidden"> developer</span>
-            </a>
-          </dd>
-        </div>
 
       </dl>
 
-
+<br>
       <h2 class="govuk-heading-m">Now submit your development plans</h2>
 
       <p class="text">
