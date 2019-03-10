@@ -27,25 +27,22 @@
 		<div class="govuk-grid-column-one-half">
 
 			<div class="">
+
 				<h1 class="govuk-heading-xl spacing-bottom-flush">
-           1 Cotswold Street <span class="govuk-heading-m" style="color: grey">(Plot 8)</span>
+           1 Cotswold Street 
         </h1>
-        <p class="govuk-heading-l spacing-top-half">Brompton<br />Northallerton <br/> North Yorkshire <br/>
+        <span class="govuk-caption-xl">Plot 8</span>
+        <p class="govuk-heading-m spacing-top-half">Brompton<br />Northallerton <br/> North Yorkshire <br/>
          DL6 2BX
         </p>
-<br/>
-<br/>
+
 			</div>
-      <div class="govuk-grid-row spacing-top-single">
-    		<div class="govuk-grid-column-two-thirds">
-    			<h2 class="govuk-heading-m">Plot details</h2>
-    			<p></a> This plot is part of registered title NYK456622</a>
-    		</div>
-    		<div class="govuk-grid-column-one-third">
-    		</div>
-    	</div>
+<br>
+    	<h2 class="govuk-heading-s">Plan Approval</h2>
+    	<p>This plot plan was approved on 22 November 2018.</p>
+    	<p>If you are a conveyancer, use this information to complete official search forms, and in deed plans.</p>
 
-
+    	
 			<!-- <div class="govuk-grid-column-one-half spacing-left-flush">
 				<h2 itemprop="name" class="govuk-heading-m">Developer</h2>
 				<div class="govuk-body"  itemscope itemtype="http://schema.org/Organization">
@@ -89,9 +86,10 @@
 
 
 		<div class="govuk-grid-column-one-half">
-			<div class="estate-location spacing-top-single">
+			<div class="estate-location spacing-top-flush">
 				<img class="map" src="/public/images/plot-8.png">
 				<p style="text-align: left;">View plot 8 on the <a href="/thurstan-park/estate-layout-plot-08">estate plan</a></p>
+				<p style="text-align: left;">This plot is part of registered title NYK456622</p>
 			</div>
 		</div>
 		<!-- estate map -->
@@ -163,4 +161,25 @@
 	<!-- end 2nd row -->
 
 
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/2020-demo#demo",
+          text: "Propostion home"
+        },
+        {
+        	href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
 {% endblock %}

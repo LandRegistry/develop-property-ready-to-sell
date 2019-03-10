@@ -306,4 +306,69 @@ router.get('/thurstan-park-no-stamp', function (req, res) {
 // ////////////////////////////////////////////////////////
 // ////////////////////////////////////////////////////////
 
+
+// ////////////////////////////////////////////////////////////////////////
+// ////   Version 16 - April 2020 Proposition - for March 2019 board //////
+// Check Development Plan V16
+// ////////////////////////////////////////////////////////////////////////
+
+// plan for a new development, or a plan for an existing development?
+// when posting to firsttime-returning-routing
+
+router.get('/pb/16/submit-plans/firsttime-returning-routing', function (req, res) {
+  // get the answer from the query string (eg. ?hasCAD=false)
+  var RevisedPlans = req.query.RevisedPlans
+
+  if (RevisedPlans === 'true') {
+    // redirect to initial plans check flow
+    res.redirect('/pb/16/submit-plans/update-check/03-get-my-plans')
+  } else {
+    // if RevisedPlans is any other value (or is missing) render the page requested
+    res.render('pb/16/submit-plans/initial-check/01-development')
+  }
+})
+
+// CAD data routing
+
+router.get('/pb/16/submit-plans/initial-check/03-do-you-have-cad', function (req, res) {
+  // get the answer from the query string (eg. ?hasCAD=false)
+  var hasCAD = req.query.hasCAD
+
+  if (hasCAD === 'false') {
+    // redirect to the relevant page
+    res.redirect('/pb/16/submit-plans/initial-check/03b-upload-pdf')
+  } else {
+    // if hasCAD is any other value (or is missing) render the page requested
+    res.render('pb/16/submit-plans/initial-check/03-upload-cad')
+  }
+})
+
+// wip below //
+
+
+
+// set-up default data for submitted development
+
+router.get('/pb/16/submit-plans/update-check/retrieve-development', function (req, res) {
+  // set up default data for submitted development
+
+  req.session.data['development-name'] = "Westway Estate Phase 2";
+  req.session.data['development-address-1'] = "North Plymouth";
+  req.session.data['development-address-2'] = "PL1 2HB";
+  req.session.data['cad_uploads'] = "westway-estate-cad-v1.dxf";
+  req.session.data['pdf_uploads'] = "westway-estate-v1.pdf";
+  req.session.data['email'] = "graham.thomas@sandersonshomes.co.uk"
+  req.session.data['dev-name'] = "Sanderson Homes";
+
+  // redirect to see your saved information for your development page
+  res.redirect('/pb/16/submit-plans/update-check/04-development-info')
+
+})
+
+// ////////////////////////////////////////////////////////////////////////
+// // END - Version 16 - April 2020 Proposition - for March 2019 board ////
+// Check Development Plan V16
+// ////////////////////////////////////////////////////////////////////////
+
+
 module.exports = router
