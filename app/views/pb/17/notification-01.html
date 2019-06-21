@@ -1,0 +1,90 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+
+{% endblock %}
+
+{% block service_name %}
+  Terms and conditions - view housing development
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" onclick="goBack()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <!-- <h1 class="govuk-heading-l">Contact method </h1> -->
+
+      <form class="form" action="notification-02" method="post">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading govuk-!-margin-bottom-6">
+                  Sign up for notifications
+              </h1>
+
+              <p>You'll get an email if the Thurstan Park estate plan changes</p>
+              <!-- <p class="govuk-body">We'll email you if the plan or plots:</p>
+
+        <ul class="govuk-list govuk-list--bullet">
+          <li> change</li>
+          <li>are withdrawn</li>
+        </ul> -->
+            </legend>
+            <div class="govuk-form-group">
+  <label class="govuk-label" for="email">
+    Enter your email address
+  </label>
+  <span id="email-hint" class="govuk-hint">
+    We’ll only use it to tell you about this housing development
+  </span>
+  <input class="govuk-input" id="email" name="email" type="email" aria-describedby="email-hint">
+</div>
+            <!-- <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-1" name="where-do-you-live" type="radio" value="england">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-1">
+                  email
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                  text message
+                </label>
+              </div>
+            </div> -->
+          </fieldset>
+        </div>
+
+        <button class="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/2020-demo#demo",
+          text: "Propostion home"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

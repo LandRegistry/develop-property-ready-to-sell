@@ -1,0 +1,116 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  Housing Developments in England and Wales
+{% endblock %}
+
+{% block service_name %}
+  
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-phase-bannerx">
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-full">
+			<h1 class="govuk-heading-xl govuk-!-margin-bottom-4">
+      	Housing Developments
+      </h1>
+		</div>
+	</div>
+
+	<div class="govuk-grid-row">
+
+		<div class="govuk-grid-column-two-thirds">
+			<p class="govuk-body-x">Current housing and property developments in England and Wales, of ten or more homes.</p>
+
+			<p class="govuk-body">This is a trial service, showing 4 of the (around) 8000 active housing developments per year.</p>
+
+		</div>
+
+	</div>
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+
+			<div class="estate-list-2">
+				<h2 class="govuk-visually-hidden">Estate list</h2>
+				<ul>
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="estate">Bakersfield, Cale Lane, Wigan, Lancashire, WN2 1HD</a></h3>					
+							<div class="developer">
+								<p>Taylor Wimpey</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="estate">Clarendon Woods, Hyde, Manchester, SK14 2LJ</a></h3>
+							<div class="developer">
+								<p>Taylor Wimpey</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="estate">Harlow Green, Crag Lane, Beckwithshaw, Harrogate, HG3 1QA</a></h3>
+							<div class="developer">
+								<p>Taylor Wimpey</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="estate-harlow-hill-grange">Harlow Hill Grange, Otley Road, Beckwithshaw, Harrogate, HG3 1QL</a></h3>
+							<div class="developer">
+								<p>Charles Church</p>
+							</div>
+						</div>
+					</li>
+
+					<li class="estate-row">
+						<div>
+							<h3 class="govuk-heading-m"><a href="estate">Thurstan Park, Northallerton Road, Northallerton, North Yorkshire, DL6 2PY</a></h3>
+							<div class="developer">
+								<p>Taylor Wimpey</p>
+							</div>
+						</div>
+					</li>
+
+
+				</ul>
+			</div>
+
+		</div>
+	</div>
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+        	href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

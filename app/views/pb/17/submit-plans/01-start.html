@@ -1,0 +1,112 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block proposition_header %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+{% block header_class %}
+  <!-- blank to remove the proposition header -->
+{% endblock %}
+
+
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row"> 
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Check housing development plan
+      </h1>
+
+      <!-- <p class="govuk-body-lead">This service is for housing developers, building 10 or more properties.</p> -->
+
+      <p>Use this service to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>check if your planned development is on land you own</li>
+        <li>check all plots extents to see if any would be unregistrable</li>
+        <li>be notified of any potential problems with registration of plot extents</li>
+        <li>provide conveyancers with information needed to register the property</li>
+      </ul>
+
+      <p>If you have a digital plan this service can provide:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>faster plan checks</li>
+        <li>fewer surveying issues during development</li>
+        <li>faster registration and fewer problems post completion</li>
+      </ul>
+
+      <p>
+        <a class="govuk-button govuk-button--start" href="02-used-before" role="button">Start now</a>
+      </p>
+
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+      <p>You will need:</p>
+      <p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>to be developing ten or more properties - these can be new or a conversion of an existing property</li>
+          <li>a PDF plan or digital estate layout plan</li>
+          <!-- <li>precedent deeds you intend to apply</li> -->
+        </ul>
+      </p>
+
+
+      <h2 class="govuk-heading-m">Other ways to apply</h2>
+      <p>
+        You can apply by post, or by email
+      </p>
+
+
+    </div>
+
+<!--     <div class="govuk-grid-column-one-third">
+
+      <div class="supplementary-panel">
+
+        <h2 class="govuk-heading-m collapse-top">What's new here?</h2>
+
+        <h3 class="govuk-heading-s">Adding this week (30th Apr to 4th May) - work in progress</h3>
+        <p>First draft of this site - Writing down the user journeys, Adding all existing pdf prototypes and making a first version of screens for journeys with no existing screens</p>
+
+        <h4 class="govuk-heading-s">Added</h4>
+        <ul class="list-bullet">
+          <li>journey abc</li>
+        </ul>
+
+      </div>   -->
+      <!-- end panel -->
+
+    </div>  <!-- end column third -->
+
+  </div>
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/2020-demo#demo",
+          text: "Propostion home"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
+
+

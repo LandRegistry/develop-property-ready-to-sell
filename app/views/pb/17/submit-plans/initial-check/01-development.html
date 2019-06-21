@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Check housing development plan
+{% endblock %}
+
+{% block beforeContent %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <a class="govuk-back-link" href="#" onclick="goBack()">Back</a>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      {% include '../../../../includes/language_switcher.html' %}
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="initial-check/02-digital-layout" method="get" class="form">
+
+        <h1 class="govuk-heading-xl">
+          Development name and address
+        </h1>
+
+        <p>The name and address of this development will be published with the plan</p>
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="development-name">Development name
+          <span id="event-name-hint" class="govuk-hint">
+            The name you use as the sales name.
+          </span></label>
+          <input class="govuk-input" id="development-name" type="text" name="development-name" value="{{ data['development-name'] }}">
+        </div>
+
+
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="development-address">
+            Development address
+          
+          <span id="event-name-hint" class="govuk-hint">
+            The sales address you are using now so people can find it, you can change this later
+          </span></label>
+          <textarea class="govuk-textarea govuk-!-width-two-thirds" name="development-address" id="development-address" rows="5"></textarea>
+        </div>
+
+        <div class="govuk-form-group">
+          <input type="submit" class="govuk-button" value="Continue">
+        </div>
+
+      </form>
+
+
+    </div>
+  </div>
+
+<script>
+  var address = "{{ data['development-address-1'] }}\n{{ data['development-address-2'] }}\n{{ data['development-address-3'] }}";
+  document.getElementById("development-address").value = address;
+</script>
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/2020-demo#demo",
+          text: "Propostion home"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

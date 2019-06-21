@@ -1,0 +1,63 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  Servie closed - view housing developments
+{% endblock %}
+
+{% block service_name %}
+
+{% endblock %}
+
+{% block beforeContent %}
+
+<!-- <div class="govuk-phase-banner" style="margin-top:-10px;">
+  <p class="govuk-phase-banner__content">
+  <strong class="govuk-tag govuk-phase-banner__content__tag " style="background-color:#005ea5;padding: 4px 8px;">
+  beta
+  </strong>
+
+  <span class="govuk-phase-banner__text">
+      This is a new service
+    </span>
+  </p>
+</div> -->
+
+<!-- <div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="estate-list">Housing development list</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Thurstan Park</li>
+  </ol>
+</div> -->
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper govuk-main-wrapper--l" id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Sorry, this trial service is closed.</h1>
+        <p class="govuk-body">
+          The service closed on 01 July 2019. It did not replace or change any exisiting Estate Plan Approval or Official Search or registration processes with HM Land Registry.</p>
+
+        <p class="govuk-body">The <a href="https://www.gov.uk/government/collections/developing-estates-practice-guides">existing information, approval, and registration processes</a> should continue to be followed for any Estate Plan or new build property that was published here.
+        </p>
+
+        <p class="govuk-body">
+          <a class="govuk-link" href="mailto:ourteamemailaddress">Contact the team</a> if you need to query anything or give feedback.
+        </p>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+
+  }) }}
+{% endblock %}
