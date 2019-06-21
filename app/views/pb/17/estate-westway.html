@@ -1,0 +1,162 @@
+{% extends "layout_hmlr.html" %}
+
+{% block page_title %}
+  Thurstan Park - Housing development
+{% endblock %}
+
+{% block service_name %}
+
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner" style="margin-top:-10px;">
+  <p class="govuk-phase-banner__content">
+  <strong class="govuk-tag govuk-phase-banner__content__tag " style="background-color:#005ea5;padding: 4px 8px;">
+  beta
+  </strong>
+
+  <span class="govuk-phase-banner__text">
+      This is a new service
+    </span>
+  </p>
+</div>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="estate-list">Housing development list</a>
+    </li>
+<!--     <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Passports, travel and living abroad</a>
+    </li> -->
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Westway Phase 2</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-two-thirds">
+			<h1 class="govuk-heading-xl spacing-bottom-flushx">
+        Housing development
+      </h1>
+		</div>
+	</div>
+
+
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-one-half">
+
+			<div class="">
+<!-- 				<h2 class="govuk-heading-l spacing-bottom-flush">
+           Westway Estate, Phase 2
+        </h2>
+        <p class="govuk-heading-l spacing-top-flush">North Plymouth <br/>
+         PL1 2HB
+        </p> -->
+
+        <div class="address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+
+			    <h2 class="address__line govuk-heading-l spacing-bottom-flush" itemprop="streetAddress">
+			      Westway Phase 2
+			    </h2>
+			    <div class="govuk-heading-m spacing-bottom-flush">
+				    <span class="address__line" itemprop="streetAddress">
+				      North Plymouth 
+				    </span>
+				    <span class="address__line" itemprop="addressLocality">Devon</span>
+				    <span class="address__line" itemprop="postalCode">PL1 2HB</span>
+				  </div>
+			  </div>
+
+			</div>
+
+			<h2 class="govuk-heading-m govuk-visually-hidden">
+			  Housing developer
+			</h2>
+			<div class="spacing-top-double">
+				<p>This is a Sandersons Home development.</p>
+			</div>
+
+
+		</div>
+
+		<div class="govuk-grid-column-one-half">
+<!-- 			<div class="estate-location spacing-top-flush">
+				<img alt="map showing location of Thurstan Park Housing Development, YO19 4QG" class="map" src="/public/images/thurstan-park-location.png">
+			</div> -->
+		</div>
+		<!-- estate map -->
+	</div>
+	<!-- end first row -->
+
+
+
+	<div class="govuk-grid-row spacing-top-single">
+		<div class="govuk-grid-column-two-thirds">
+			<h2 class="govuk-heading-m">Development plans</h2>
+
+
+
+
+
+
+		<!-- <p>View the <a href="/germanybeck/estate-layout"><span class="govuk-visually-hidden">Thurstan Park, </span>development plan</a> (PDF), dated 18 September 2018, or <a href="development-plans">information about the plots</a>
+			</p>  -->
+
+			<p>View the <a href="development-plans-westway">development plan and plot information<span class="govuk-visually-hidden"> for Westway Phase 2</span></a>.
+			</p>
+
+		</div>
+
+
+		<div class="govuk-grid-column-one-third">
+
+		</div>
+	</div>
+
+	<div class="govuk-grid-row spacing-top-single">
+		<div class="govuk-grid-column-two-thirds">
+			<h2 class="govuk-heading-m">Keep up to date</h2>
+			<p><a href="notification-01">Get notifications</a> when the plan is updated.</a>
+		</div>
+		<div class="govuk-grid-column-one-third">
+		</div>
+	</div>
+
+
+<!-- 	<div class="govuk-grid-row spacing-top-single">
+		<div class="govuk-grid-column-two-thirds">
+			<h2 class="govuk-heading-m">Feedback</h2>
+			<p>This is a trial service - your <a class="govuk-link" href="feedback">feedback</a> will help us to improve it.</p>
+		</div>
+	</div> -->
+
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/2020-demo#demo",
+          text: "Propostion home"
+        },
+        {
+        	href: "cookies",
+          text: "Cookies"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}

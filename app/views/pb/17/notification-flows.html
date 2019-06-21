@@ -1,0 +1,113 @@
+{% extends "layout_ap_branded.html" %}
+
+{% block page_title %}
+
+{% endblock %}
+
+{% block service_name %}
+  Cookies - view housing development
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l ">
+        Signing up for notifications
+      </h1>
+
+      <p>All information in the View housing development service is open to the public.</p>
+
+      <p>Anyone can sign up to email notifications for any housing development. We will only send an email if the estate plan changes.</p>
+
+      <h2 class="govuk-heading-m">
+        What data is stored and how we'll keep it secure
+      </h2>
+
+      <p>We’ll collect an email address from anyone who signs up to the service.
+        It will only be used for notifications.
+      </p>
+
+      <p> Email addresses will be held securely following GDPR guidelines, GOV.UK best practise and any other relevant UK legislation.
+      </p>
+
+
+      <h2 class="govuk-heading-m" id="examples">
+        Example emails
+      </h2>
+
+
+      <h3 class="govuk-heading-s">Signing up
+      </h3>
+
+      <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-7">
+        <li>
+          <a class="govuk-link" href="notification-signed-up">Confirmation of signing up to a housing development</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="notification-plan-changed">Notification of change to an estate plan</a>
+        </li>
+
+      </ul>
+
+
+
+
+
+      <h3 class="govuk-heading-s">Unsubscribing
+      </h3>
+      <ul class="govuk-list govuk-list--bullet govuk-!-margin-bottom-7">
+        <li>
+        <a class="govuk-link" href="notification-unsubscribe">Confirmation page when user unsubscribes via link in email</a>
+        </li>
+        <li>
+          <a class="govuk-link" href="notification-unsubscribed-email">Email confirmation of unsubscribing</a>
+        </li>
+      </ul>
+
+
+      
+      <h3 class="govuk-heading-s">Deleting email addresses after inactivity
+      </h3>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>
+          <a class="govuk-link" href="notification-deleted-estate-inactive">Notification of automatic deletion after housing development 'closed'</a>
+        </li>
+        <li>
+          Planned - A similar notification of automatic deletion after 9 months of inactivity on the housing development
+        </li>
+      </ul>
+
+      <br><br>
+      <hr>
+      <p class="govuk-lead">
+        <a href="estate">&lt; Return to the Housing development page</a>
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block footer %}
+  {{ govukFooter({
+    meta: {
+      items: [
+        {
+          href: "/2020-demo#demo",
+          text: "Propostion home"
+        },
+        {
+          href: "terms-conditions",
+          text: "Terms and conditions"
+        }
+      ]
+    }
+  }) }}
+{% endblock %}
