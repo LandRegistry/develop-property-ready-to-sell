@@ -1,7 +1,7 @@
 {% extends "layout_hmlr.html" %}
 
 {% block page_title %}
-  Servie closed - view housing developments
+  Service closed - view housing development
 {% endblock %}
 
 {% block service_name %}
@@ -77,6 +77,13 @@
 
 {% block footer %}
   {{ govukFooter({
-
+    meta: {
+      items: [
+        {
+        	href: "cookies",
+          text: "Cookies"
+        }
+      ]
+    }
   }) }}
 {% endblock %}
