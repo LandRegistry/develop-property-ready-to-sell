@@ -2,7 +2,9 @@
 
 This is prototyping the beta proposition. 
 
-Not just stuff for end users.  Also will includes stuff for internal, organisational use.
+Not just stuff for end users.  Also includes stuff for internal, organisational use.
+
+THIS WORK IS NOT CURRENT - PROJECT and BETA SERVICE ENDED JULY 2019
 
 
 ## Related prototypes
