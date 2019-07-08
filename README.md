@@ -11,7 +11,7 @@ THIS WORK IS NOT CURRENT - PROJECT and BETA SERVICE ENDED JULY 2019
 
 This prototype, shows private beta designs for research, and build.
 
-This prototype also includes work from rthe second Alpha, and contains work from the 'wider looking' alpha prototype - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
+This prototype also includes work from the second Alpha, and contains work from the 'wider looking' alpha prototype - [develop land and property alpha prototype](https://github.com/LandRegistry/develop-property-alpha)
 
 
 ## Users
