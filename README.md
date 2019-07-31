@@ -1,5 +1,12 @@
 # I want to develop land or property - Private Beta for 'viewing housing development plans'
 
+## Archived
+As of 01 July 2019
+This service / collection of services is now an archive.
+The view housing development beta service has ended, and closed
+The other ideas here are also not under active exploration, investigation or development.
+
+
 This is prototyping the beta proposition. 
 
 Not just stuff for end users.  Also includes stuff for internal, organisational use.
