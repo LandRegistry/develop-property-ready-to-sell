@@ -1,5 +1,7 @@
-{% extends "template.njk" %}
+{#- We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework. -#}
+{%- set assetPath = '/govuk/assets' -%}
 
+{% extends "govuk/template.njk" %}
 
 {% block headIcons %}
   <link rel="shortcut icon" href="{{ asset_path }}images/unbranded.ico?0.18.3" type="image/x-icon" />
@@ -11,13 +13,12 @@
 {% endblock %}
 
 {% block head %}
-{% include "includes/head.html" %}
-  <link href="/public/stylesheets/unbranded.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/public/stylesheets/unbranded.css" media="all" rel="stylesheet" type="text/css">
 {% endblock %}
 
 {% block header %}{% endblock %}
 {% block footer %}{% endblock %}
 
-{% block body_end %}
+{% block bodyEnd %}
   {% include "includes/scripts.html" %}
 {% endblock %}

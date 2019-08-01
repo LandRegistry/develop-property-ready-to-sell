@@ -1,9 +1,9 @@
-@import "node_modules/govuk-frontend/settings/all";
+
 
 // Override the govuk-frontend font stack
 $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", sans-serif;
 
-@import "node_modules/govuk-frontend/all";
+$govuk-assets-path: '/govuk/assets/';
 
 
 
@@ -18,7 +18,7 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 //////////
 
 .ap-header {
-  background-color: #005EA5;
+  background-color: #1d70b8;
   border-bottom: 1px solid #3f3f3f;
 }
 
@@ -53,7 +53,7 @@ $govuk-font-family: "HelveticaNeue", "Helvetica Neue", "Arial", "Helvetica", san
 
 // need to reintroduce p to pick up sizing - dunno why
 p {
-  @extend %govuk-body-m;
+/*  @extend %govuk-body-m; */
 }
 
 
